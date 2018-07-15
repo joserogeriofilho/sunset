@@ -1,2 +1,4 @@
-input {
-  background-color: blue; }
+.form-group input {
+  background-color: red; }
+  .form-group input:focus {
+    background-color: blue; }
