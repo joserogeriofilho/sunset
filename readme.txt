@@ -1,0 +1,1 @@
+node-sass --watch src/darktropical/sass/custom.scss dist/darktropical/css/custom.css
