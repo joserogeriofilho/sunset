@@ -1,0 +1,32 @@
+.form-group{
+    .form-control{
+        border-width: 0px 0px 1px 0px;
+        border-radius: 0;
+        box-shadow: initial;
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    label{
+        font-size: 16px;
+        font-weight: 400;
+        position: absolute;
+
+        &.label-outside-form{
+            font-size: 12px;
+            position: relative;
+        }
+    }
+}
+
+.form-group-focused{
+    .form-control{
+        border-color: $primary;
+        border-width: 0px 0px 2px 0px;
+        box-shadow: initial;
+    }
+
+    label{
+        color: $primary;
+    }
+}
