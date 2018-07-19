@@ -1,10 +1,4 @@
-label {
-  transition: 0.2s ease all; }
-
 .form-group {
-  align-content: flex-end;
-  display: flex;
-  flex-direction: column;
   height: 56px; }
   .form-group .form-control {
     border-width: 0px 0px 1px 0px;
@@ -15,12 +9,12 @@ label {
   .form-group label {
     font-size: 16px;
     font-weight: 400;
-    margin: 5px 0 0 0;
-    position: absolute; }
+    position: relative;
+    transition: 0.2s ease all;
+    top: 33px; }
     .form-group label.label-outside-form {
       font-size: 12px;
-      position: relative;
-      top: 3px; }
+      top: 8px; }
 
 .form-group-focused .form-control {
   border-color: #237840;
