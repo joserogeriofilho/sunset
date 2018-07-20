@@ -1,41 +1,5 @@
 @import 'components/palette';
 @import 'components/transitions';
 
-//@import 'components/inputs';
-
-.form-group{
-    height: 56px;
-
-    .form-control{
-        border-width: 0px 0px 1px 0px;
-        border-radius: 0;
-        box-shadow: initial;
-        font-size: 16px;
-        padding: 0px;
-    }
-
-    label{
-        font-size: 16px;
-        font-weight: 400;
-        position: relative;
-        transition: $tlabels;
-        top: 33px;
-
-        &.label-outside-form{
-            font-size: 12px;
-            top: 8px;
-        }
-    }
-}
-
-.form-group-focused{
-    .form-control{
-        border-color: $primary;
-        border-width: 0px 0px 2px 0px;
-        box-shadow: initial;
-    }
-
-    label{
-        color: $primary;
-    }
-}
+@import 'components/sidebar';
+@import 'components/inputs';

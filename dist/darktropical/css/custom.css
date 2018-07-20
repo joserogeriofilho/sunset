@@ -1,16 +1,20 @@
+.wrapper {
+  display: flex; }
+
 .form-group {
-  height: 56px; }
+  height: 48px; }
   .form-group .form-control {
     border-width: 0px 0px 1px 0px;
     border-radius: 0;
     box-shadow: initial;
     font-size: 16px;
-    padding: 0px; }
+    padding: 0px;
+    transition: 0.2s ease-in-out; }
   .form-group label {
     font-size: 16px;
     font-weight: 400;
     position: relative;
-    transition: 0.2s ease all;
+    transition: 0.2s ease-in-out;
     top: 33px; }
     .form-group label.label-outside-form {
       font-size: 12px;
