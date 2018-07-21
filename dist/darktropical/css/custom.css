@@ -1,5 +1,28 @@
+html, body, .container-fluid {
+  height: 100%; }
+
+.container-fluid {
+  overflow-y: scroll;
+  padding: 50px 50px 50px 30px; }
+
 .wrapper {
-  display: flex; }
+  display: flex;
+  height: 100%; }
+
+.sidebar {
+  background: linear-gradient(to right, #40404B, #303038);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  color: #D9D9DB;
+  height: 100%;
+  min-width: 256px;
+  padding: 0 24px 0 24px;
+  position: sticky; }
+  .sidebar .app-name {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 128px; }
 
 .form-group {
   height: 48px; }

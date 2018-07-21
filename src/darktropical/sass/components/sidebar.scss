@@ -1,3 +1,17 @@
-.wrapper{
-    display: flex;
+.sidebar{
+    background: linear-gradient(to right, $gray500 , $gray600);
+    box-shadow: $shadow4;
+    color: $gray100;
+    height: 100%;
+    min-width: 256px;
+    padding: 0 24px 0 24px;
+    position: sticky;
+
+    .app-name{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 128px;
+    }
 }

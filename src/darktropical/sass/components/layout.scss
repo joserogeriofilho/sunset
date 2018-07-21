@@ -1,0 +1,13 @@
+html, body, .container-fluid{
+    height: 100%;
+}
+
+.container-fluid{
+    overflow-y: scroll;
+    padding: 50px 50px 50px 30px;    
+}
+
+.wrapper{
+    display: flex;
+    height: 100%;
+}
