@@ -1,1 +1,3 @@
-node-sass --watch src/darktropical/sass/custom.scss dist/darktropical/css/custom.css
+node-sass --watch src/darktropical/sass/darktropical.scss dist/darktropical/css/darktropical.css
+
+node-sass src/darktropical/sass/darktropical.scss dist/darktropical/css/darktropical.css

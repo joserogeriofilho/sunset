@@ -1,11 +1,31 @@
 .sidebar{
     background: linear-gradient(to right, $gray500 , $gray600);
-    box-shadow: $shadow4;
+    box-shadow: $shadowT3;
     color: $gray100;
     height: 100%;
     min-width: 256px;
     padding: 0 24px 0 24px;
     position: sticky;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li{
+            a{
+                color: $gray300;
+                display: block;
+                min-height: 50px;
+            }
+
+            &.active{
+                a{
+                    color: white;
+                }
+            }
+        }
+    }
 
     .app-name{
         align-items: center;
@@ -13,5 +33,10 @@
         flex-direction: column;
         justify-content: center;
         min-height: 128px;
+
+        h3{
+            font-weight: 300;
+            font-size: 36px;
+        }
     }
 }

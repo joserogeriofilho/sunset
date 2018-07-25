@@ -11,18 +11,31 @@ html, body, .container-fluid {
 
 .sidebar {
   background: linear-gradient(to right, #40404B, #303038);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
   color: #D9D9DB;
   height: 100%;
   min-width: 256px;
   padding: 0 24px 0 24px;
   position: sticky; }
+  .sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .sidebar ul li a {
+      color: #8C8C93;
+      display: block;
+      min-height: 50px; }
+    .sidebar ul li.active a {
+      color: white; }
   .sidebar .app-name {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 128px; }
+    .sidebar .app-name h3 {
+      font-weight: 300;
+      font-size: 36px; }
 
 .form-group {
   height: 48px; }
