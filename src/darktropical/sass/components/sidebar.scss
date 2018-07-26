@@ -27,6 +27,16 @@
                     color: white;
                 }
             }
+
+            .collapse, .collapsing{
+                a{
+                    background-color: transparent;
+                    border: none;
+                    color: $gray300;
+                    display: block;
+                    padding: 16px 0 16px 56px;
+                }
+            }
         }
     }
 

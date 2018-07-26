@@ -31,6 +31,12 @@ html, body, .container-fluid {
       border-style: solid;
       border-width: 0 0 0 6px;
       color: white; }
+    .sidebar ul li .collapse a, .sidebar ul li .collapsing a {
+      background-color: transparent;
+      border: none;
+      color: #8C8C93;
+      display: block;
+      padding: 16px 0 16px 56px; }
   .sidebar .app-name {
     align-items: center;
     display: flex;
