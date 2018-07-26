@@ -4,7 +4,6 @@
     color: $gray100;
     height: 100%;
     min-width: 256px;
-    padding: 0 24px 0 24px;
     position: sticky;
 
     ul {
@@ -16,11 +15,15 @@
             a{
                 color: $gray300;
                 display: block;
-                min-height: 50px;
+                padding: 20px 0 20px 36px;
             }
 
             &.active{
                 a{
+                    background-color: $gray600;
+                    border-image: linear-gradient(to bottom, $red, $yellow) 1 100%;;
+                    border-style: solid;
+                    border-width: 0 0 0 6px;
                     color: white;
                 }
             }

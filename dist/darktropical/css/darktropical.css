@@ -16,7 +16,6 @@ html, body, .container-fluid {
   color: #D9D9DB;
   height: 100%;
   min-width: 256px;
-  padding: 0 24px 0 24px;
   position: sticky; }
   .sidebar ul {
     list-style-type: none;
@@ -25,8 +24,12 @@ html, body, .container-fluid {
     .sidebar ul li a {
       color: #8C8C93;
       display: block;
-      min-height: 50px; }
+      padding: 20px 0 20px 36px; }
     .sidebar ul li.active a {
+      background-color: #303038;
+      border-image: linear-gradient(to bottom, #FE4D42, #FEEE5B) 1 100%;
+      border-style: solid;
+      border-width: 0 0 0 6px;
       color: white; }
   .sidebar .app-name {
     align-items: center;
