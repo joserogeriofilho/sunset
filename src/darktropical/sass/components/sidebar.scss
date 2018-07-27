@@ -16,25 +16,34 @@
                 color: $gray300;
                 display: block;
                 padding: 20px 0 20px 36px;
-            }
 
-            &.active{
-                a{
-                    background-color: $gray600;
-                    border-image: linear-gradient(to bottom, $red, $yellow) 1 100%;;
-                    border-style: solid;
-                    border-width: 0 0 0 6px;
-                    color: white;
+                &[aria-expanded=true]{
+                    box-shadow: $shadow3;
                 }
             }
 
-            .collapse, .collapsing{
-                a{
-                    background-color: transparent;
-                    border: none;
-                    color: $gray300;
-                    display: block;
-                    padding: 16px 0 16px 56px;
+            &.active{
+                background-color: $gray600;
+                border-image: linear-gradient(to bottom, $red, $yellow) 1 100%;;
+                border-style: solid;
+                border-width: 0 0 0 6px;
+
+                a{color: white;}
+            }
+
+            ul{
+                &.collapse, &.collapsing{
+                    a{
+                        background-color: transparent;
+                        border: none;
+                        color: $gray300;
+                        display: block;
+                        padding: 16px 0 16px 56px;
+                    }
+
+                    &+ li{
+                        box-shadow: 0 -10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23);
+                    }
                 }
             }
         }

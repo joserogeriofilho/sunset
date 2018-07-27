@@ -25,18 +25,23 @@ html, body, .container-fluid {
       color: #8C8C93;
       display: block;
       padding: 20px 0 20px 36px; }
-    .sidebar ul li.active a {
+      .sidebar ul li a[aria-expanded=true] {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+    .sidebar ul li.active {
       background-color: #303038;
       border-image: linear-gradient(to bottom, #FE4D42, #FEEE5B) 1 100%;
       border-style: solid;
-      border-width: 0 0 0 6px;
-      color: white; }
-    .sidebar ul li .collapse a, .sidebar ul li .collapsing a {
+      border-width: 0 0 0 6px; }
+      .sidebar ul li.active a {
+        color: white; }
+    .sidebar ul li ul.collapse a, .sidebar ul li ul.collapsing a {
       background-color: transparent;
       border: none;
       color: #8C8C93;
       display: block;
       padding: 16px 0 16px 56px; }
+    .sidebar ul li ul.collapse + li, .sidebar ul li ul.collapsing + li {
+      box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23); }
   .sidebar .app-name {
     align-items: center;
     display: flex;
