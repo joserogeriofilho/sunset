@@ -28,7 +28,7 @@ html, body, .container-fluid {
       position: relative;
       z-index: 90; }
       .sidebar ul li a:hover {
-        background-color: #303038;
+        background-color: rgba(48, 48, 56, 0.5);
         text-decoration: none; }
       .sidebar ul li a:focus {
         text-decoration: none; }
@@ -41,13 +41,13 @@ html, body, .container-fluid {
       border-width: 0 0 0 6px; }
       .sidebar ul li.active a {
         color: white; }
-    .sidebar ul li ul.collapse a, .sidebar ul li ul.collapsing a {
-      border: none;
-      display: block;
-      padding: 16px 0 16px 56px;
-      z-index: 50; }
-    .sidebar ul li ul.collapse li:last-child a, .sidebar ul li ul.collapsing li:last-child a {
+    .sidebar ul li ul.collapse, .sidebar ul li ul.collapsing {
       box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19) inset, 0 -6px 6px rgba(0, 0, 0, 0.23) inset; }
+      .sidebar ul li ul.collapse a, .sidebar ul li ul.collapsing a {
+        border: none;
+        display: block;
+        padding: 16px 0 16px 56px;
+        z-index: 50; }
   .sidebar .app-name {
     align-items: center;
     display: flex;

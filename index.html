@@ -10,40 +10,80 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>Dark Tropical Bootstrap Theme</title>
 
-    <!-- Stylesheets -->
-    <link href="./dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./dist/darktropical/css/custom.css" rel="stylesheet">
-
-    <!-- Javascripts -->
+    <!-- jQuery -->
     <script src="./dist/darktropical/js/jquery.min.js"></script>
-    <script src="./dist/darktropical/js/custom.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="./dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./dist/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Dark Tropical -->
+    <link href="./dist/darktropical/css/darktropical.css" rel="stylesheet">
+    <script src="./dist/darktropical/js/darktropical.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
   </head>
 
   <body>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <form>
-            <div style="height: 80px"></div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Check me out
-              </label>
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
+    <div class="wrapper">
+
+      <nav class="sidebar">
+        <div class="app-name">
+          <h3>LOGO</h3>
         </div>
+    
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li>
+            <a href="#" data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="false">Components</a><i class="material-icons">expand_more</i>
+            <ul class="collapse" id="homeSubmenu">
+              <li><a href="#">Buttons</a></li>
+              <li><a href="#">Forms</a></li>
+              <li><a href="#">Tables</a></li>
+              <li><a href="#">Panels & Cards</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Buttons</a></li>
+          <li><a href="#">Forms</a></li>
+          <li><a href="#">Tables</a></li>
+          <li><a href="#">Panels & Cards</a></li>
+        </ul>
+      </nav>
+    
+      <!-- Page Content Holder -->
+      <div class="container-fluid" id="content">
+        <div class="row">
+          <div class="col-xs-7">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at felis sed dolor ultrices fermentum. Donec ut elit eget sapien lacinia venenatis. Morbi faucibus eleifend dui vitae efficitur. Quisque consectetur lorem tortor, ac tristique massa pellentesque dapibus. Quisque ex mi, viverra vel metus aliquet, tincidunt venenatis felis. Nunc sagittis porttitor porta. Ut sed elit fermentum ex tincidunt rhoncus et sit amet nisl. Curabitur auctor tristique arcu nec porttitor. Morbi eleifend pretium mi, nec accumsan nisl commodo at. Nunc mollis eu arcu at porta. Nam in sapien sapien. Ut tincidunt turpis ipsum, sed vehicula eros porta vitae. Nunc eget sapien suscipit, bibendum erat sed, semper enim. Nulla erat mauris, ultrices a sem at, euismod egestas purus.</p>
+
+            <p>Quisque vehicula gravida congue. Ut porttitor condimentum egestas. Donec ac dictum odio. Aliquam ac velit orci. Phasellus auctor aliquam sapien, at sollicitudin metus tincidunt vitae. Maecenas feugiat tempor ex, id ultricies ex molestie ut. Aliquam convallis risus quis quam pharetra, ac semper est iaculis. Sed ullamcorper ac odio nec placerat. Maecenas et erat sed urna interdum consectetur eu nec nulla. Aliquam finibus neque in rutrum vestibulum. Nullam massa dui, imperdiet id velit in, semper facilisis sapien. Etiam iaculis blandit tellus, ac venenatis ante interdum quis.</p>
+            
+            <p>Curabitur auctor finibus ipsum ut gravida. Nam aliquam tincidunt mollis. Integer quis blandit mi. Suspendisse tempus purus a lacus hendrerit, venenatis gravida ipsum tempus. Vestibulum id pharetra risus, a ornare lorem. Cras non porttitor nunc. Donec vitae dictum velit. Sed feugiat mollis magna et sagittis. Sed vehicula massa eget ex suscipit, at viverra velit rhoncus. Maecenas suscipit rhoncus erat vitae sodales. Morbi sed augue ut justo facilisis dapibus. Vivamus eu odio justo. Sed luctus ligula ut malesuada lobortis. Nam hendrerit lacinia ipsum, eget tristique sapien consectetur vitae. Cras id rhoncus est.</p>
+          </div>
+          <div class="col-xs-5">
+            <p>Maecenas fringilla enim non mauris sollicitudin condimentum. Quisque sit amet vehicula arcu. Maecenas gravida libero et nisl semper placerat. Donec ornare eu orci at hendrerit. Phasellus sit amet semper libero, a pulvinar risus. Vivamus rhoncus a arcu id tincidunt. Nunc cursus fermentum velit eu varius. Nulla finibus ut turpis eget ultrices. Mauris nunc nisi, tincidunt non rhoncus a, aliquet ac arcu. Nulla in blandit ligula. Sed libero nisi, rhoncus non lorem quis, dignissim venenatis ligula.</p>
+
+            <p>Nulla non congue mi. Vestibulum maximus a lacus sit amet venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce cursus elit vel sagittis gravida. Nunc convallis est sapien, id iaculis lectus placerat non. Nunc nec lectus purus. Aliquam egestas enim at erat fermentum gravida. Aliquam magna ante, iaculis id ligula eu, iaculis euismod urna.</p>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-7">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at felis sed dolor ultrices fermentum. Donec ut elit eget sapien lacinia venenatis. Morbi faucibus eleifend dui vitae efficitur. Quisque consectetur lorem tortor, ac tristique massa pellentesque dapibus. Quisque ex mi, viverra vel metus aliquet, tincidunt venenatis felis. Nunc sagittis porttitor porta. Ut sed elit fermentum ex tincidunt rhoncus et sit amet nisl. Curabitur auctor tristique arcu nec porttitor. Morbi eleifend pretium mi, nec accumsan nisl commodo at. Nunc mollis eu arcu at porta. Nam in sapien sapien. Ut tincidunt turpis ipsum, sed vehicula eros porta vitae. Nunc eget sapien suscipit, bibendum erat sed, semper enim. Nulla erat mauris, ultrices a sem at, euismod egestas purus.</p>
+  
+              <p>Quisque vehicula gravida congue. Ut porttitor condimentum egestas. Donec ac dictum odio. Aliquam ac velit orci. Phasellus auctor aliquam sapien, at sollicitudin metus tincidunt vitae. Maecenas feugiat tempor ex, id ultricies ex molestie ut. Aliquam convallis risus quis quam pharetra, ac semper est iaculis. Sed ullamcorper ac odio nec placerat. Maecenas et erat sed urna interdum consectetur eu nec nulla. Aliquam finibus neque in rutrum vestibulum. Nullam massa dui, imperdiet id velit in, semper facilisis sapien. Etiam iaculis blandit tellus, ac venenatis ante interdum quis.</p>
+              
+              <p>Curabitur auctor finibus ipsum ut gravida. Nam aliquam tincidunt mollis. Integer quis blandit mi. Suspendisse tempus purus a lacus hendrerit, venenatis gravida ipsum tempus. Vestibulum id pharetra risus, a ornare lorem. Cras non porttitor nunc. Donec vitae dictum velit. Sed feugiat mollis magna et sagittis. Sed vehicula massa eget ex suscipit, at viverra velit rhoncus. Maecenas suscipit rhoncus erat vitae sodales. Morbi sed augue ut justo facilisis dapibus. Vivamus eu odio justo. Sed luctus ligula ut malesuada lobortis. Nam hendrerit lacinia ipsum, eget tristique sapien consectetur vitae. Cras id rhoncus est.</p>
+            </div>
+            <div class="col-xs-5">
+              <p>Maecenas fringilla enim non mauris sollicitudin condimentum. Quisque sit amet vehicula arcu. Maecenas gravida libero et nisl semper placerat. Donec ornare eu orci at hendrerit. Phasellus sit amet semper libero, a pulvinar risus. Vivamus rhoncus a arcu id tincidunt. Nunc cursus fermentum velit eu varius. Nulla finibus ut turpis eget ultrices. Mauris nunc nisi, tincidunt non rhoncus a, aliquet ac arcu. Nulla in blandit ligula. Sed libero nisi, rhoncus non lorem quis, dignissim venenatis ligula.</p>
+  
+              <p>Nulla non congue mi. Vestibulum maximus a lacus sit amet venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce cursus elit vel sagittis gravida. Nunc convallis est sapien, id iaculis lectus placerat non. Nunc nec lectus purus. Aliquam egestas enim at erat fermentum gravida. Aliquam magna ante, iaculis id ligula eu, iaculis euismod urna.</p>
+            </div>
+          </div>
       </div>
     </div>
 
