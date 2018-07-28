@@ -16,6 +16,16 @@
                 color: $gray300;
                 display: block;
                 padding: 20px 0 20px 36px;
+                position: relative;
+                z-index: 90;
+
+                &:hover{
+                    background-color: $gray600;
+                    text-decoration: none;
+                }
+                &:focus{
+                    text-decoration: none;
+                }
 
                 &[aria-expanded=true]{
                     box-shadow: $shadow3;
@@ -34,15 +44,14 @@
             ul{
                 &.collapse, &.collapsing{
                     a{
-                        background-color: transparent;
                         border: none;
-                        color: $gray300;
                         display: block;
                         padding: 16px 0 16px 56px;
+                        z-index: 50;
                     }
 
-                    &+ li{
-                        box-shadow: 0 -10px 20px rgba(0,0,0,0.19), 0 -6px 6px rgba(0,0,0,0.23);
+                    li:last-child a{
+                        box-shadow: 0 -10px 20px rgba(0,0,0,0.19) inset, 0 -6px 6px rgba(0,0,0,0.23) inset;
                     }
                 }
             }

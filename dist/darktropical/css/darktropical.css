@@ -24,7 +24,14 @@ html, body, .container-fluid {
     .sidebar ul li a {
       color: #8C8C93;
       display: block;
-      padding: 20px 0 20px 36px; }
+      padding: 20px 0 20px 36px;
+      position: relative;
+      z-index: 90; }
+      .sidebar ul li a:hover {
+        background-color: #303038;
+        text-decoration: none; }
+      .sidebar ul li a:focus {
+        text-decoration: none; }
       .sidebar ul li a[aria-expanded=true] {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
     .sidebar ul li.active {
@@ -35,13 +42,12 @@ html, body, .container-fluid {
       .sidebar ul li.active a {
         color: white; }
     .sidebar ul li ul.collapse a, .sidebar ul li ul.collapsing a {
-      background-color: transparent;
       border: none;
-      color: #8C8C93;
       display: block;
-      padding: 16px 0 16px 56px; }
-    .sidebar ul li ul.collapse + li, .sidebar ul li ul.collapsing + li {
-      box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19), 0 -6px 6px rgba(0, 0, 0, 0.23); }
+      padding: 16px 0 16px 56px;
+      z-index: 50; }
+    .sidebar ul li ul.collapse li:last-child a, .sidebar ul li ul.collapsing li:last-child a {
+      box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19) inset, 0 -6px 6px rgba(0, 0, 0, 0.23) inset; }
   .sidebar .app-name {
     align-items: center;
     display: flex;
