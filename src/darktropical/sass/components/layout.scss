@@ -1,3 +1,8 @@
+$break-xs: 768px;
+$break-sm: 991px;
+$break-md: 1200px;
+$break-lg: 999999px;
+
 html, body, .container-fluid{
     height: 100%;
 }
@@ -10,8 +15,13 @@ html, body, .container-fluid{
 .wrapper{
     display: flex;
     height: 100%;
+    overflow: hidden;
 }
 
 #content{
     position: relative;
+
+    @media screen and (max-width: $break-sm) {
+        margin-top: 50px;
+    }
 }

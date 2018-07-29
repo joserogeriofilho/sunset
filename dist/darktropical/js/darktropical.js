@@ -13,6 +13,11 @@ $( document ).ready(function() {
         }
     });
 
+    $("body").on("click", '#hamburger-menu, #content.content-modal', function() {
+        $('.sidebar').toggleClass('hidden-xs hidden-sm modal-sidebar');
+        $('#content').toggleClass('content-modal');
+    });
+
     // inputs
     $(".form-group").on("focusin", function(){
         $(this).addClass("form-group-focused");

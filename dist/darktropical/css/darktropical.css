@@ -9,10 +9,14 @@ html, body, .container-fluid {
 
 .wrapper {
   display: flex;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 #content {
   position: relative; }
+  @media screen and (max-width: 991px) {
+    #content {
+      margin-top: 50px; } }
 
 .sidebar {
   background: linear-gradient(to right, #40404B, #303038);
@@ -51,7 +55,10 @@ html, body, .container-fluid {
       border-style: solid;
       border-width: 0 0 0 6px; }
       .sidebar ul li.active a {
-        color: white; }
+        color: white;
+        margin-left: -6px; }
+        .sidebar ul li.active a:hover {
+          background-color: initial; }
     .sidebar ul li ul.collapse, .sidebar ul li ul.collapsing {
       box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19) inset, 0 -6px 6px rgba(0, 0, 0, 0.23) inset; }
       .sidebar ul li ul.collapse a, .sidebar ul li ul.collapsing a {
@@ -69,6 +76,13 @@ html, body, .container-fluid {
     .sidebar .app-name h3 {
       font-size: 36px;
       font-weight: 100; }
+  .sidebar.modal-sidebar {
+    position: absolute;
+    z-index: 99; }
+
+.app-bar {
+  background: linear-gradient(to right, #40404B, #303038);
+  z-index: 90; }
 
 .form-group {
   height: 48px; }

@@ -3,7 +3,7 @@
     box-shadow: $shadowT3;
     color: $gray100;
     height: 100%;
-    min-width: 256px;
+    min-width: 256px;    
     position: sticky;
 
     ul {
@@ -50,7 +50,14 @@
                 border-style: solid;
                 border-width: 0 0 0 6px;
 
-                a{color: white;}
+                a{
+                    color: white;
+                    margin-left: -6px;
+
+                    &:hover{
+                        background-color: initial;
+                    }
+                }
             }
 
             ul{
@@ -80,5 +87,10 @@
             font-size: 36px;
             font-weight: 100;
         }
+    }
+
+    &.modal-sidebar{
+        position: absolute;
+        z-index: 99;
     }
 }
