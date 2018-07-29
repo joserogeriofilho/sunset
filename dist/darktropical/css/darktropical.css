@@ -23,8 +23,10 @@ html, body, .container-fluid {
     padding: 0; }
     .sidebar ul li a {
       color: #8C8C93;
-      display: block;
-      padding: 20px 0 20px 36px;
+      display: flex;
+      font-size: 14px;
+      justify-content: space-between;
+      padding: 20px 36px 20px 36px;
       position: relative;
       z-index: 90; }
       .sidebar ul li a:hover {
@@ -32,8 +34,13 @@ html, body, .container-fluid {
         text-decoration: none; }
       .sidebar ul li a:focus {
         text-decoration: none; }
+      .sidebar ul li a .material-icons {
+        max-height: 20px;
+        transition: 0.2s ease-in-out; }
       .sidebar ul li a[aria-expanded=true] {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+        .sidebar ul li a[aria-expanded=true] .material-icons {
+          transform: rotate(180deg); }
     .sidebar ul li.active {
       background-color: #303038;
       border-image: linear-gradient(to bottom, #FE4D42, #FEEE5B) 1 100%;
@@ -46,6 +53,7 @@ html, body, .container-fluid {
       .sidebar ul li ul.collapse a, .sidebar ul li ul.collapsing a {
         border: none;
         display: block;
+        font-size: 12px;
         padding: 16px 0 16px 56px;
         z-index: 50; }
   .sidebar .app-name {

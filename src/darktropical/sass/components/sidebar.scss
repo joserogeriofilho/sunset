@@ -14,8 +14,10 @@
         li{
             a{
                 color: $gray300;
-                display: block;
-                padding: 20px 0 20px 36px;
+                display: flex;
+                font-size: 14px;
+                justify-content: space-between;
+                padding: 20px 36px 20px 36px;
                 position: relative;
                 z-index: 90;
 
@@ -23,12 +25,22 @@
                     background-color: rgba($gray600, 0.5);
                     text-decoration: none;
                 }
+
                 &:focus{
                     text-decoration: none;
                 }
 
+                .material-icons{
+                    max-height: 20px;
+                    transition: $tlabels;
+                }
+
                 &[aria-expanded=true]{
                     box-shadow: $shadow3;
+
+                    .material-icons{
+                        transform: rotate(180deg);
+                    }
                 }
             }
 
@@ -46,6 +58,7 @@
                     a{
                         border: none;
                         display: block;
+                        font-size: 12px;
                         padding: 16px 0 16px 56px;
                         z-index: 50;
                     }
