@@ -1,5 +1,19 @@
 $( document ).ready(function() {
 
+    // sidebar
+    $('.sidebar li a').on("click", function() {
+        var $this = $(this);
+
+        if(!$this.attr("data-toggle")){
+            $('.sidebar .active').removeClass('active');
+
+            if (!$this.parent().hasClass('active')) {
+                $this.parent().addClass('active');
+            }
+        }
+    });
+
+    // inputs
     $(".form-group").on("focusin", function(){
         $(this).addClass("form-group-focused");
         $(this).children("label").addClass("label-outside-form");
