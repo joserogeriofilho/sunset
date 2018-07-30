@@ -9,7 +9,7 @@ html, body, .container-fluid{
 
 .container-fluid{
     overflow-y: scroll;
-    padding: 50px 50px 50px 30px;    
+    padding: 50px 50px 50px 30px;
 }
 
 .modal{
@@ -31,6 +31,7 @@ html, body, .container-fluid{
     position: relative;
 
     @media screen and (max-width: $break-sm) {
-        margin-top: 50px;
+        margin-top: 56px;
+        padding: 24px;    
     }
 }

@@ -24,7 +24,8 @@ html, body, .container-fluid {
   position: relative; }
   @media screen and (max-width: 991px) {
     #content {
-      margin-top: 50px; } }
+      margin-top: 56px;
+      padding: 24px; } }
 
 .sidebar {
   background: linear-gradient(to right, #40404B, #303038);
@@ -98,6 +99,7 @@ html, body, .container-fluid {
 
 .app-bar {
   background: linear-gradient(to right, #40404B, #303038);
+  min-height: 56px;
   padding: 16px;
   z-index: 90; }
 
