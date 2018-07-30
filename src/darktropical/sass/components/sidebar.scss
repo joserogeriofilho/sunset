@@ -6,6 +6,7 @@
     min-width: 256px;    
     overflow-y: auto;
     position: sticky;
+    transition: $tlabels;
 
     ul {
         list-style-type: none;
@@ -91,7 +92,14 @@
     }
 
     &.modal-sidebar{
+        box-shadow: $shadowT3;
+        margin-left: 0px;
+    }
+
+    @media screen and (max-width: $break-sm) {
+        box-shadow: none;
+        margin-left: -256px;
         position: absolute;
-        z-index: 99;
+        z-index: 9999;
     }
 }

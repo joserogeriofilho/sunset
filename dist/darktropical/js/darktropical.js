@@ -13,9 +13,18 @@ $( document ).ready(function() {
         }
     });
 
-    $("body").on("click", '#hamburger-menu, #content.content-modal', function() {
-        $('.sidebar').toggleClass('hidden-xs hidden-sm modal-sidebar');
-        $('#content').toggleClass('content-modal');
+    $("body").on("click", '#hamburger-menu', function() {
+        $('.sidebar').addClass('modal-sidebar');
+
+        var $modal = '<div id="sidebar-modal" class="modal"></div>';
+
+        $( ".wrapper" ).append( $modal );
+    });
+
+    $("body").on("click", '#sidebar-modal', function() {
+        $('.sidebar').removeClass('modal-sidebar');
+
+        $( "#sidebar-modal" ).remove();
     });
 
     // inputs

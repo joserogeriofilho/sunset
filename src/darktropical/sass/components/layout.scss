@@ -12,6 +12,15 @@ html, body, .container-fluid{
     padding: 50px 50px 50px 30px;    
 }
 
+.modal{
+    background-color: transparentize($gray700, 0.35);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+}
+
 .wrapper{
     display: flex;
     height: 100%;
