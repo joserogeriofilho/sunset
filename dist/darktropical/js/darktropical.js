@@ -42,6 +42,9 @@ $( document ).ready(function() {
     $("body").swipe( {
         swipeLeft:function(event, direction, distance, duration, fingerCount) {
             hideSidebar();
+        },
+        swipeRight:function(event, direction, distance, duration, fingerCount) {
+            showSidebar();
         }
     });
 
