@@ -1,6 +1,23 @@
+// SIDEBAR
+function showSidebar() {
+    var $modal = '<div id="sidebar-modal" class="modal"></div>';
+
+    $('.sidebar').addClass('modal-sidebar');
+    $( ".wrapper" ).append( $modal );
+}
+
+function hideSidebar(){
+    $('.sidebar').removeClass('modal-sidebar');
+    $( "#sidebar-modal" ).remove();
+}
+
+
+// EVENTS
 $( document ).ready(function() {
 
-    // sidebar
+    // SIDEBAR
+
+    // Dynamic active links
     $('.sidebar li a').on("click", function() {
         var $this = $(this);
 
@@ -13,21 +30,25 @@ $( document ).ready(function() {
         }
     });
 
+    // Hide and show sidebar on mobile
     $("body").on("click", '#hamburger-menu', function() {
-        $('.sidebar').addClass('modal-sidebar');
-
-        var $modal = '<div id="sidebar-modal" class="modal"></div>';
-
-        $( ".wrapper" ).append( $modal );
+        showSidebar();
     });
 
     $("body").on("click", '#sidebar-modal', function() {
-        $('.sidebar').removeClass('modal-sidebar');
-
-        $( "#sidebar-modal" ).remove();
+        hideSidebar();
     });
 
-    // inputs
+    $("body").swipe( {
+        swipeLeft:function(event, direction, distance, duration, fingerCount) {
+            hideSidebar();
+        }
+    });
+
+
+    // INPUTS
+
+    // Verify if an input has content, if it does, stops the label from becoming a placeholder
     $(".form-group").on("focusin", function(){
         $(this).addClass("form-group-focused");
         $(this).children("label").addClass("label-outside-form");

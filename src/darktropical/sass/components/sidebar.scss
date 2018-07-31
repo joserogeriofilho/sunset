@@ -1,6 +1,6 @@
 .sidebar{
     background: linear-gradient(to right, $gray500 , $gray600);
-    box-shadow: $shadowT3;
+    box-shadow: $shadow-ud-3;
     color: $gray100;
     height: 100%;
     min-width: 256px;    
@@ -38,7 +38,7 @@
                 }
 
                 &[aria-expanded=true]{
-                    box-shadow: $shadow3;
+                    box-shadow: $shadow-ud-3;
 
                     .material-icons{
                         transform: rotate(180deg);
@@ -72,7 +72,7 @@
                         z-index: 50;
                     }
 
-                    box-shadow: 0 -10px 20px rgba(0,0,0,0.19) inset, 0 -6px 6px rgba(0,0,0,0.23) inset;
+                    box-shadow: $shadow-du-3;
                 }
             }
         }
@@ -92,7 +92,7 @@
     }
 
     &.modal-sidebar{
-        box-shadow: $shadowT3;
+        box-shadow: $shadow-lr-3;
         margin-left: 0px;
     }
 

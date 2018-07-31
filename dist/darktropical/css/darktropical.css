@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
-html, body, .container-fluid {
+html, body, .container-fluid, .wrapper {
   height: 100%; }
 
 .container-fluid {
@@ -13,6 +13,7 @@ html, body, .container-fluid {
   width: 100%;
   height: 100%;
   position: absolute;
+  touch-action: none;
   z-index: 999; }
 
 .wrapper {
@@ -29,7 +30,7 @@ html, body, .container-fluid {
 
 .sidebar {
   background: linear-gradient(to right, #40404B, #303038);
-  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   color: #D9D9DB;
   height: 100%;
   min-width: 256px;
@@ -71,7 +72,7 @@ html, body, .container-fluid {
         .sidebar ul li.active a:hover {
           background-color: initial; }
     .sidebar ul li ul.collapse, .sidebar ul li ul.collapsing {
-      box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19) inset, 0 -6px 6px rgba(0, 0, 0, 0.23) inset; }
+      box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19) inset, 0 6px 6px rgba(0, 0, 0, 0.23) inset; }
       .sidebar ul li ul.collapse a, .sidebar ul li ul.collapsing a {
         border: none;
         display: block;
