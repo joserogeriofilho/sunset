@@ -2,12 +2,12 @@
 function showSidebar() {
     var $modal = '<div id="sidebar-modal" class="modal"></div>';
 
-    $('.sidebar').addClass('modal-sidebar');
+    $('.sidebar').addClass('sidebar-mobile-visible');
     $( ".wrapper" ).append( $modal );
 }
 
 function hideSidebar(){
-    $('.sidebar').removeClass('modal-sidebar');
+    $('.sidebar').removeClass('sidebar-mobile-visible');
     $( "#sidebar-modal" ).remove();
 }
 
@@ -21,12 +21,14 @@ $( document ).ready(function() {
     $('.sidebar li a').on("click", function() {
         var $this = $(this);
 
-        if(!$this.attr("data-toggle")){
+        if(!($this.attr("data-toggle") == "collapse")){
             $('.sidebar .active').removeClass('active');
 
             if (!$this.parent().hasClass('active')) {
                 $this.parent().addClass('active');
             }
+
+            hideSidebar();
         }
     });
 

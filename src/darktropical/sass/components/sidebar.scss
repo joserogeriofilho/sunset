@@ -8,6 +8,7 @@
     position: sticky;
     transition: $tlabels;
 
+
     ul {
         list-style-type: none;
         margin: 0;
@@ -91,7 +92,7 @@
         }
     }
 
-    &.modal-sidebar{
+    &.sidebar-mobile-visible{
         box-shadow: $shadow-lr-3;
         margin-left: 0px;
     }
