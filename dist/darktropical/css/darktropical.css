@@ -53,7 +53,7 @@ html, body, .container-fluid, .wrapper {
 
 .sidebar {
   background: linear-gradient(to right, #40404B, #303038);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
   color: #D9D9DB;
   height: 100%;
   min-width: 256px;
@@ -94,14 +94,14 @@ html, body, .container-fluid, .wrapper {
         margin-left: -6px; }
         .sidebar ul li.active a:hover {
           background-color: initial; }
-    .sidebar ul li ul.collapse, .sidebar ul li ul.collapsing {
+    .sidebar ul li ul li a {
+      border: none;
+      display: block;
+      font-size: 12px;
+      padding: 16px 0 16px 56px;
+      z-index: 50; }
+    .sidebar ul li ul li:last-child {
       box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19) inset, 0 -6px 6px rgba(0, 0, 0, 0.23) inset; }
-      .sidebar ul li ul.collapse a, .sidebar ul li ul.collapsing a {
-        border: none;
-        display: block;
-        font-size: 12px;
-        padding: 16px 0 16px 56px;
-        z-index: 50; }
   .sidebar .app-name {
     align-items: center;
     display: flex;
