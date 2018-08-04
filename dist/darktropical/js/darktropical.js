@@ -1,9 +1,11 @@
 // SIDEBAR
 function showSidebar() {
-    var $modal = '<div id="sidebar-modal" class="modal"></div>';
+    if($('.sidebar').css("margin-left") !== "0px"){
+        var $modal = '<div id="sidebar-modal" class="modal"></div>';
 
-    $('.sidebar').addClass('sidebar-mobile-visible');
-    $( ".wrapper" ).append( $modal );
+        $('.sidebar').addClass('sidebar-mobile-visible');
+        $( ".wrapper" ).append( $modal );
+    }
 }
 
 function hideSidebar(){
