@@ -38,6 +38,7 @@
                     transition: $tlabels;
                 }
 
+                // Submenu
                 &[aria-expanded=true]{
                     box-shadow: $shadow-ud-3;
 
@@ -66,12 +67,18 @@
             // Submenu
             ul{
                 li{
+                    background-color: $gray600;
+
                     a{
                         border: none;
                         display: block;
                         font-size: 12px;
                         padding: 16px 0 16px 56px;
                         z-index: 50;
+                    }
+
+                    &.active{
+                        background-color: $gray700;
                     }
 
                     &:last-child{

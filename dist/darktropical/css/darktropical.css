@@ -94,14 +94,18 @@ html, body, .container-fluid, .wrapper {
         margin-left: -6px; }
         .sidebar ul li.active a:hover {
           background-color: initial; }
-    .sidebar ul li ul li a {
-      border: none;
-      display: block;
-      font-size: 12px;
-      padding: 16px 0 16px 56px;
-      z-index: 50; }
-    .sidebar ul li ul li:last-child {
-      box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19) inset, 0 -6px 6px rgba(0, 0, 0, 0.23) inset; }
+    .sidebar ul li ul li {
+      background-color: #303038; }
+      .sidebar ul li ul li a {
+        border: none;
+        display: block;
+        font-size: 12px;
+        padding: 16px 0 16px 56px;
+        z-index: 50; }
+      .sidebar ul li ul li.active {
+        background-color: #202026; }
+      .sidebar ul li ul li:last-child {
+        box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.19) inset, 0 -6px 6px rgba(0, 0, 0, 0.23) inset; }
   .sidebar .app-name {
     align-items: center;
     display: flex;
