@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 .ripple-animation {
   position: relative;
@@ -151,12 +151,84 @@ html, body, .container-fluid, .wrapper {
       top: 8px; }
 
 .form-group-focused .form-control {
-  border-color: #237840;
+  border-color: #D48B00;
   border-width: 0px 0px 2px 0px;
   box-shadow: initial; }
 
 .form-group-focused label {
-  color: #237840; }
+  color: #D48B00; }
 
 html, body, .container-fluid {
   font-family: 'Roboto', sans-serif; }
+
+h1, .jumbotron h1 {
+  color: #66666F;
+  font-size: 42px;
+  font-weight: 300;
+  line-height: 0.85;
+  margin-bottom: 30px; }
+  h1 small, .jumbotron h1 small {
+    color: #40404B;
+    font-size: 18px;
+    font-weight: 500; }
+
+.page-header {
+  border-bottom: 1px solid #B3B3B7;
+  margin-top: 56px;
+  margin-bottom: 24px; }
+  .page-header h1 {
+    margin-bottom: 10px; }
+
+h2 {
+  color: #40404B;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 24px;
+  margin-bottom: 12px; }
+
+.container .jumbotron, .container-fluid .jumbotron, .jumbotron {
+  background-color: #D9D9DB;
+  border-radius: 0px; }
+  .container .jumbotron p, .container-fluid .jumbotron p, .jumbotron p {
+    color: #40404B;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px; }
+
+.btn {
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 16px 10px 16px;
+  margin-left: 6px;
+  margin-right: 6px; }
+  .btn.btn-lg {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 14px 22px 14px 22px; }
+  .btn.btn-sm {
+    font-weight: 700;
+    font-size: 11px;
+    padding: 8px 12px 8px 12px; }
+  .btn.btn-raised {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    .btn.btn-raised:first-child {
+      margin-left: 0px; }
+    .btn.btn-raised:last-child {
+      margin-right: 0px; }
+    .btn.btn-raised:hover {
+      background-color: inherit;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    .btn.btn-raised.btn-default {
+      color: #40404B; }
+    .btn.btn-raised.btn-primary {
+      background: linear-gradient(to right, #FE4D42, #FEEE5B);
+      color: #303038; }
+    .btn.btn-raised.btn-success {
+      background-color: #077E41; }
+    .btn.btn-raised.btn-info {
+      background-color: #2077CB; }
+    .btn.btn-raised.btn-warning {
+      background-color: #D48B00; }
+    .btn.btn-raised.btn-danger {
+      background-color: #FE4D42; }

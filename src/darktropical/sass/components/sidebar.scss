@@ -1,5 +1,5 @@
 .sidebar{
-    background: linear-gradient(to right, $gray500 , $gray600);
+    background: $gradient-dark-gray;
     box-shadow: $shadow-lr-3;
     color: $gray100;
     height: 100%;
@@ -50,7 +50,7 @@
 
             &.active{
                 background-color: $gray600;
-                border-image: linear-gradient(to bottom, $red, $yellow) 1 100%;;
+                border-image: $gradient-primary-bottom 1 100%;
                 border-style: solid;
                 border-width: 0 0 0 6px;
 

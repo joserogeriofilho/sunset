@@ -1,6 +1,50 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 html, body, .container-fluid{
     font-family: 'Roboto', sans-serif;
+}
+
+h1, .jumbotron h1{
+    color: $gray400;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 0.85;
+    margin-bottom: 30px;
+
+    small{
+        color: $gray500;
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+.page-header{
+    border-bottom: 1px solid $gray200;
+    margin-top: 56px;
+    margin-bottom: 24px;
+
+    h1{
+        margin-bottom: 10px;
+    }
+}
+
+h2{
+    color: $gray500;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.container .jumbotron, .container-fluid .jumbotron,.jumbotron{
+    background-color: $gray100;
+    border-radius: 0px;
+
+    p{
+        color: $gray500;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+    }
 }
