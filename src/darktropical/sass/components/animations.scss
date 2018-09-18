@@ -1,6 +1,6 @@
 $tlabels: .2s ease-in-out;
 
-.ripple-animation {
+.ripple-30 {
     position: relative;
     overflow: hidden;
   
@@ -26,4 +26,60 @@ $tlabels: .2s ease-in-out;
       opacity: 0.65;
       transition: 0s;
     }
+}
+
+.ripple-90 {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    background: rgba(255,255,255,0.9);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    padding-top: 240%;
+    padding-left: 240%;
+    margin-top: -120%;
+    margin-left: -120%;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+
+  &:active:after {
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: 0;
+    opacity: 0.65;
+    transition: 0s;
+  }
+}
+
+.ripple-black-30 {
+  position: relative;
+  overflow: hidden;
+
+  &:after {
+    content: "";
+    background: rgba(0,0,0,0.3);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    padding-top: 240%;
+    padding-left: 240%;
+    margin-top: -120%;
+    margin-left: -120%;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+
+  &:active:after {
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: 0;
+    opacity: 0.65;
+    transition: 0s;
+  }
 }

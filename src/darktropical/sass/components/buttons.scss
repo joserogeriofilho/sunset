@@ -35,7 +35,7 @@
         }
 
         &.btn-default{
-            color: $gray500;
+            color: $gray400;
         }
         &.btn-primary{
             background: $gradient-primary-right;
@@ -52,6 +52,41 @@
         }
         &.btn-danger{
             background-color: $red500;
+        }
+    }
+
+    &.btn-flat{
+        background-color: transparent;
+
+        &:first-child{
+            margin-left: 0px;
+        }
+
+        &:last-child{
+            margin-right: 0px;
+        }
+
+        &:hover{
+            background-color: rgba( $gray100, .5 );
+        }
+
+        &.btn-default{
+            color: $gray400;
+        }
+        &.btn-primary{
+            color: $primary;
+        }
+        &.btn-success{
+            color: $green500;
+        }
+        &.btn-info{
+            color: $blue500;
+        }
+        &.btn-warning{
+            color: $orange500;
+        }
+        &.btn-danger{
+            color: $red500;
         }
     }
 }

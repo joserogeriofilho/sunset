@@ -28,6 +28,11 @@ html, body, .container-fluid, .wrapper{
     overflow: hidden;
 }
 
+.container .jumbotron, .container-fluid .jumbotron,.jumbotron{
+    background-color: rgba($gray100, 0.5);
+    border-radius: 0px;
+}
+
 #content{
     position: relative;
 

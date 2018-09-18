@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
-.ripple-animation {
+.ripple-30 {
   position: relative;
   overflow: hidden; }
-  .ripple-animation:after {
+  .ripple-30:after {
     content: "";
     background: rgba(255, 255, 255, 0.3);
     display: block;
@@ -15,7 +15,53 @@
     margin-left: -120%;
     opacity: 0;
     transition: all 0.4s; }
-  .ripple-animation:active:after {
+  .ripple-30:active:after {
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: 0;
+    opacity: 0.65;
+    transition: 0s; }
+
+.ripple-90 {
+  position: relative;
+  overflow: hidden; }
+  .ripple-90:after {
+    content: "";
+    background: rgba(255, 255, 255, 0.9);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    padding-top: 240%;
+    padding-left: 240%;
+    margin-top: -120%;
+    margin-left: -120%;
+    opacity: 0;
+    transition: all 0.4s; }
+  .ripple-90:active:after {
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: 0;
+    opacity: 0.65;
+    transition: 0s; }
+
+.ripple-black-30 {
+  position: relative;
+  overflow: hidden; }
+  .ripple-black-30:after {
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    padding-top: 240%;
+    padding-left: 240%;
+    margin-top: -120%;
+    margin-left: -120%;
+    opacity: 0;
+    transition: all 0.4s; }
+  .ripple-black-30:active:after {
     padding-top: 0;
     padding-left: 0;
     margin-top: 0;
@@ -43,6 +89,10 @@ html, body, .container-fluid, .wrapper {
   display: flex;
   height: 100%;
   overflow: hidden; }
+
+.container .jumbotron, .container-fluid .jumbotron, .jumbotron {
+  background-color: rgba(217, 217, 219, 0.5);
+  border-radius: 0px; }
 
 #content {
   position: relative; }
@@ -172,28 +222,28 @@ h1, .jumbotron h1 {
     font-size: 18px;
     font-weight: 500; }
 
+.jumbotron h1 {
+  color: #D48B00; }
+
 .page-header {
   border-bottom: 1px solid #B3B3B7;
-  margin-top: 56px;
-  margin-bottom: 24px; }
+  margin-top: 64px;
+  margin-bottom: 32px; }
   .page-header h1 {
     margin-bottom: 10px; }
 
 h2 {
-  color: #40404B;
+  color: #D48B00;
   font-weight: 400;
   font-size: 24px;
   margin-top: 24px;
-  margin-bottom: 12px; }
+  margin-bottom: 16px; }
 
-.container .jumbotron, .container-fluid .jumbotron, .jumbotron {
-  background-color: #D9D9DB;
-  border-radius: 0px; }
-  .container .jumbotron p, .container-fluid .jumbotron p, .jumbotron p {
-    color: #40404B;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px; }
+.container .jumbotron p, .container-fluid .jumbotron p, .jumbotron p {
+  color: #40404B;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px; }
 
 .btn {
   border: none;
@@ -220,7 +270,7 @@ h2 {
       background-color: inherit;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     .btn.btn-raised.btn-default {
-      color: #40404B; }
+      color: #66666F; }
     .btn.btn-raised.btn-primary {
       background: linear-gradient(to right, #FE4D42, #FEEE5B);
       color: #303038; }
@@ -232,3 +282,23 @@ h2 {
       background-color: #D48B00; }
     .btn.btn-raised.btn-danger {
       background-color: #FE4D42; }
+  .btn.btn-flat {
+    background-color: transparent; }
+    .btn.btn-flat:first-child {
+      margin-left: 0px; }
+    .btn.btn-flat:last-child {
+      margin-right: 0px; }
+    .btn.btn-flat:hover {
+      background-color: rgba(217, 217, 219, 0.5); }
+    .btn.btn-flat.btn-default {
+      color: #66666F; }
+    .btn.btn-flat.btn-primary {
+      color: #D48B00; }
+    .btn.btn-flat.btn-success {
+      color: #077E41; }
+    .btn.btn-flat.btn-info {
+      color: #2077CB; }
+    .btn.btn-flat.btn-warning {
+      color: #D48B00; }
+    .btn.btn-flat.btn-danger {
+      color: #FE4D42; }
