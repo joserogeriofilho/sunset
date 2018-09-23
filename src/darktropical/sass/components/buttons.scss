@@ -70,6 +70,11 @@
             background-color: rgba( $gray100, .5 );
         }
 
+        &:active{
+            background-color: $gray100;
+            box-shadow: none;
+        }
+
         &.btn-default{
             color: $gray400;
         }
@@ -87,6 +92,19 @@
         }
         &.btn-danger{
             color: $red500;
+        }
+    }
+
+    &.btn-action{
+        border: none;
+        color: $gray300;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 0;
+        margin: 4px;
+
+        &:first-child { 
+            margin-left: 0;
         }
     }
 }

@@ -1,0 +1,85 @@
+.table{
+    box-shadow: $shadow-ud-1;
+    border: 1px solid rgba($gray100, 0.5);
+    border-bottom: 0;
+    border-radius: 4px;
+    border-collapse: separate !important;
+
+    .checkbox{
+        margin: 0;
+        text-align: center;
+
+        input{
+            position: relative;
+            margin: 0;
+        }
+    }
+
+    thead{
+        tr{
+            th{
+                padding: 13px;
+                border: none;
+            }
+        }
+    }
+    
+    tbody{
+        tr{
+            &:hover{
+                background-color: rgba($gray100, 0.5);
+            }
+
+            td{
+                padding: 13px;
+            }
+        }
+    }
+
+    &.table-condensed{
+        thead{
+            tr{
+                th{
+                    padding: 4px 8px 4px 8px;
+                }
+            }
+        }
+
+        tbody{
+            tr{
+                td{
+                    padding: 4px 8px 4px 8px;
+                }
+            }
+        }
+    }
+
+    &.table-fixed-header{
+        table{
+            table-layout:fixed;
+        }
+        
+        .table{
+            margin: 0;
+            border: none;
+        }
+
+        .fixed-header{
+            table{
+                thead{
+                    tr{
+                        th{
+                            border-color: rgba($gray100, 0.5);
+                            border-style: solid;
+                            border-width: 0 0 1px 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fixed-body{
+            overflow-y: auto;
+        }
+    }
+}

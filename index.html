@@ -42,15 +42,22 @@
             <a href="#" data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="false">Components<i class="material-icons">expand_more</i></a>
             <ul class="collapse" id="homeSubmenu">
               <li class="ripple-30"><a href="#buttons">Buttons</a></li>
-              <li class="ripple-30"><a href="#forms">Forms</a></li>
               <li class="ripple-30"><a href="#tables">Tables</a></li>
-              <li class="ripple-30"><a href="#panelscards">Panels & Cards</a></li>
+              <li class="ripple-30"><a href="#forms">Forms</a></li>
+              <li class="ripple-30"><a href="#thumbnails">Thumbnails</a></li>
+              <li class="ripple-30"><a href="#labels">Labels</a></li>
+              <li class="ripple-30"><a href="#badges">Badges</a></li>
+              <li class="ripple-30"><a href="#alerts">Alerts</a></li>
+              <li class="ripple-30"><a href="#progress_bars">Progress Bar</a></li>
+              <li class="ripple-30"><a href="#list_groups">List Groups</a></li>
+              <li class="ripple-30"><a href="#panels">Panels</a></li>
+              <li class="ripple-30"><a href="#wells">Wells</a></li>
+              <li class="ripple-30"><a href="#carousel">Carousel</a></li>
             </ul>
           </li>
-          <li class="ripple-30"><a href="#buttons">Buttons</a></li>
-          <li class="ripple-30"><a href="#forms">Forms</a></li>
-          <li class="ripple-30"><a href="#tables">Tables</a></li>
-          <li class="ripple-30"><a href="#panelscards">Panels & Cards</a></li>
+          <li class="ripple-30"><a href="#users">Users</a></li>
+          <li class="ripple-30"><a href="#advanced_search">Advanced Search</a></li>
+          <li class="ripple-30"><a href="#account_management">Account Management</a></li>
         </ul>
       </nav>
 
@@ -69,20 +76,22 @@
           </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ante justo. Suspendisse ultrices purus id mi iaculis tempor. Maecenas gravida velit eget augue rhoncus aliquam. Sed est purus, egestas non gravida nec, accumsan a nibh. Cras accumsan enim vitae mauris feugiat, vel tincidunt nisi condimentum.</p>
 
-          <button type="button" class="btn btn-lg btn-raised btn-primary">VISIT OUR GITHUB</button>
+          <button type="button" class="btn btn-lg btn-raised btn-primary ripple-90">VISIT OUR GITHUB</button>
         </div>
 
 
-        <div class="page-header">
+        <div id="buttons" class="page-header">
           <h1>Buttons</h1>
         </div>
 
-        <h2>Raised</h2>
         <div class="row">
-          <div class="col-sm-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ante justo. Suspendisse ultrices purus id mi iaculis tempor. Maecenas gravida velit eget augue rhoncus aliquam. Sed est purus, egestas non gravida nec.</p>
+          <div class="col-xs-12">
+            <h2>Raised</h2>
           </div>
-          <div class="col-sm-9">
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
             <p>
               <button type="button" class="btn btn-lg btn-raised btn-default ripple-black-30">DEFAULT</button>
               <button type="button" class="btn btn-lg btn-raised btn-primary ripple-90">PRIMARY</button>
@@ -110,45 +119,60 @@
           </div>
         </div>
 
-        <h2>Flat</h2>
         <div class="row">
-          <div class="col-sm-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ante justo. Suspendisse ultrices purus id mi iaculis tempor. Maecenas gravida velit eget augue rhoncus aliquam. Sed est purus, egestas non gravida nec.</p>
+          <div class="col-xs-12">
+            <h2>Flat</h2>
           </div>
-          <div class="col-sm-9">
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
             <p>
-              <button type="button" class="btn btn-lg btn-flat btn-default">DEFAULT</button>
-              <button type="button" class="btn btn-lg btn-flat btn-primary">PRIMARY</button>
-              <button type="button" class="btn btn-lg btn-flat btn-success">SUCCESS</button>
-              <button type="button" class="btn btn-lg btn-flat btn-info">INFO</button>
-              <button type="button" class="btn btn-lg btn-flat btn-warning">WARNING</button>
-              <button type="button" class="btn btn-lg btn-flat btn-danger">DANGER</button>
+              <button type="button" class="btn btn-lg btn-flat btn-default ripple-black-30">DEFAULT</button>
+              <button type="button" class="btn btn-lg btn-flat btn-primary ripple-black-30">PRIMARY</button>
+              <button type="button" class="btn btn-lg btn-flat btn-success ripple-black-30">SUCCESS</button>
+              <button type="button" class="btn btn-lg btn-flat btn-info ripple-black-30">INFO</button>
+              <button type="button" class="btn btn-lg btn-flat btn-warning ripple-black-30">WARNING</button>
+              <button type="button" class="btn btn-lg btn-flat btn-danger ripple-black-30">DANGER</button>
             </p>
             <p>
-              <button type="button" class="btn btn-flat btn-default">DEFAULT</button>
-              <button type="button" class="btn btn-flat btn-primary">PRIMARY</button>
-              <button type="button" class="btn btn-flat btn-success">SUCCESS</button>
-              <button type="button" class="btn btn-flat btn-info">INFO</button>
-              <button type="button" class="btn btn-flat btn-warning">WARNING</button>
-              <button type="button" class="btn btn-flat btn-danger">DANGER</button>
+              <button type="button" class="btn btn-flat btn-default ripple-black-30">DEFAULT</button>
+              <button type="button" class="btn btn-flat btn-primary ripple-black-30">PRIMARY</button>
+              <button type="button" class="btn btn-flat btn-success ripple-black-30">SUCCESS</button>
+              <button type="button" class="btn btn-flat btn-info ripple-black-30">INFO</button>
+              <button type="button" class="btn btn-flat btn-warning ripple-black-30">WARNING</button>
+              <button type="button" class="btn btn-flat btn-danger ripple-black-30">DANGER</button>
             </p>
             <p>
-              <button type="button" class="btn btn-flat btn-sm btn-default">DEFAULT</button>
-              <button type="button" class="btn btn-flat btn-sm btn-primary">PRIMARY</button>
-              <button type="button" class="btn btn-flat btn-sm btn-success">SUCCESS</button>
-              <button type="button" class="btn btn-flat btn-sm btn-info">INFO</button>
-              <button type="button" class="btn btn-flat btn-sm btn-warning">WARNING</button>
-              <button type="button" class="btn btn-flat btn-sm btn-danger">DANGER</button>
+              <button type="button" class="btn btn-flat btn-sm btn-default ripple-black-30">DEFAULT</button>
+              <button type="button" class="btn btn-flat btn-sm btn-primary ripple-black-30">PRIMARY</button>
+              <button type="button" class="btn btn-flat btn-sm btn-success ripple-black-30">SUCCESS</button>
+              <button type="button" class="btn btn-flat btn-sm btn-info ripple-black-30">INFO</button>
+              <button type="button" class="btn btn-flat btn-sm btn-warning ripple-black-30">WARNING</button>
+              <button type="button" class="btn btn-flat btn-sm btn-danger ripple-black-30">DANGER</button>
             </p>
           </div>
         </div>
 
 
-        <div class="page-header">
+        <div id="tables" class="page-header">
           <h1>Tables</h1>
         </div>
+
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-xs-12">
+            <h2>Regular vs Condensed</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Regular</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
             <table class="table">
               <thead>
                 <tr>
@@ -180,77 +204,15 @@
               </tbody>
             </table>
           </div>
-          <div class="col-md-6">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Condensed Table</h3>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-md-6">
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td rowspan="2">1</td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
-                <tr>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@TwBootstrap</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
           <div class="col-md-6">
             <table class="table table-condensed">
               <thead>
@@ -284,14 +246,146 @@
           </div>
         </div>
 
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Select and Action Buttons</h2>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>
+                    <div class="checkbox">
+                      <input type="checkbox">
+                    </div>
+                  </th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <input type="checkbox">
+                    </div>
+                  </td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td>
+                    <i class="btn btn-action material-icons">bookmark</i>
+                    <i class="btn btn-action material-icons">edit</i>
+                    <i class="btn btn-action material-icons">delete</i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <input type="checkbox">
+                    </div>
+                  </td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td>
+                    <i class="btn btn-action material-icons">bookmark</i>
+                    <i class="btn btn-action material-icons">edit</i>
+                    <i class="btn btn-action material-icons">delete</i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="checkbox">
+                      <input type="checkbox">
+                    </div>
+                  </td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                  <td>
+                    <i class="btn btn-action material-icons">bookmark</i>
+                    <i class="btn btn-action material-icons">edit</i>
+                    <i class="btn btn-action material-icons">delete</i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-        <div class="page-header">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Fixed Header</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table table-fixed-header">
+              <div class="fixed-header">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Username</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+              <div class="fixed-body" style="height: 141px">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    <tr>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="thumbnails" class="page-header">
           <h1>Thumbnails</h1>
         </div>
         <img data-src="holder.js/200x200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
 
 
-        <div class="page-header">
+        <div id="labels" class="page-header">
           <h1>Labels</h1>
         </div>
         <h1>
@@ -352,7 +446,7 @@
         </p>
 
 
-        <div class="page-header">
+        <div id="badges" class="page-header">
           <h1>Badges</h1>
         </div>
         <p>
@@ -365,108 +459,7 @@
         </ul>
 
 
-        <div class="page-header">
-          <h1>Dropdown menus</h1>
-        </div>
-        <div class="dropdown theme-dropdown clearfix">
-          <a id="dropdownMenu1" href="#" class="sr-only dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li class="active"><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div>
-
-
-        <div class="page-header">
-          <h1>Navs</h1>
-        </div>
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="#">Profile</a></li>
-          <li role="presentation"><a href="#">Messages</a></li>
-        </ul>
-        <ul class="nav nav-pills" role="tablist">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="#">Profile</a></li>
-          <li role="presentation"><a href="#">Messages</a></li>
-        </ul>
-
-
-        <div class="page-header">
-          <h1>Navbars</h1>
-        </div>
-
-        <nav class="navbar navbar-default">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Project name</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </nav>
-
-        <nav class="navbar navbar-inverse">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Project name</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </nav>
-
-
-        <div class="page-header">
+        <div id="alerts" class="page-header">
           <h1>Alerts</h1>
         </div>
         <div class="alert alert-success" role="alert">
@@ -483,7 +476,7 @@
         </div>
 
 
-        <div class="page-header">
+        <div id="progress_bars" class="page-header">
           <h1>Progress bars</h1>
         </div>
         <div class="progress">
@@ -511,7 +504,7 @@
         </div>
 
 
-        <div class="page-header">
+        <div id="list_groups" class="page-header">
           <h1>List groups</h1>
         </div>
         <div class="row">
@@ -554,7 +547,7 @@
         </div>
 
 
-        <div class="page-header">
+        <div id="panels" class="page-header">
           <h1>Panels</h1>
         </div>
         <div class="row">
@@ -615,7 +608,7 @@
         </div>
 
 
-        <div class="page-header">
+        <div id="wells" class="page-header">
           <h1>Wells</h1>
         </div>
         <div class="well">
@@ -623,7 +616,7 @@
         </div>
 
 
-        <div class="page-header">
+        <div id="carousel" class="page-header">
           <h1>Carousel</h1>
         </div>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
