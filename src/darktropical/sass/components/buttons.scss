@@ -107,4 +107,23 @@
             margin-left: 0;
         }
     }
+
+
+    &[aria-expanded=false]{
+        .text-collapsed{
+            display: block;
+        }
+        .text-expanded{
+            display: none;
+        }
+    }
+
+    &[aria-expanded=true]{
+        .text-collapsed{
+            display: none;
+        }
+        .text-expanded{
+            display: block;
+        }
+    }
 }

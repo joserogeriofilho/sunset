@@ -55,6 +55,8 @@
     }
 
     &.table-fixed-header{
+        overflow-y: auto;
+
         table{
             table-layout:fixed;
         }
@@ -65,6 +67,14 @@
         }
 
         .fixed-header{
+            position: sticky;
+            top: 0;
+            left: 0;
+
+            .table{
+                box-shadow: none;
+            }
+
             table{
                 thead{
                     tr{
@@ -79,7 +89,18 @@
         }
 
         .fixed-body{
-            overflow-y: auto;
+            
         }
+    }
+}
+
+.table-responsive{
+    box-shadow: $shadow-ud-1;
+    border: 1px solid rgba($gray100, 0.5);
+
+    .table{
+        box-shadow: none;
+        border: none;
+        margin-bottom: 0;
     }
 }

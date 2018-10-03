@@ -44,7 +44,7 @@
               <li class="ripple-30"><a href="#buttons">Buttons</a></li>
               <li class="ripple-30"><a href="#tables">Tables</a></li>
               <li class="ripple-30"><a href="#forms">Forms</a></li>
-              <li class="ripple-30"><a href="#thumbnails">Thumbnails</a></li>
+              <li class="ripple-30"><a href="#cards">Cards</a></li>
               <li class="ripple-30"><a href="#labels">Labels</a></li>
               <li class="ripple-30"><a href="#badges">Badges</a></li>
               <li class="ripple-30"><a href="#alerts">Alerts</a></li>
@@ -201,6 +201,24 @@
                   <td>the Bird</td>
                   <td>@twitter</td>
                 </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -214,6 +232,7 @@
 
         <div class="row">
           <div class="col-md-6">
+            <!--div class="table-responsive"-->
             <table class="table table-condensed">
               <thead>
                 <tr>
@@ -241,8 +260,26 @@
                   <td colspan="2">Larry the Bird</td>
                   <td>@twitter</td>
                 </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
               </tbody>
             </table>
+            <!--/div-->
           </div>
         </div>
 
@@ -254,68 +291,115 @@
   
         <div class="row">
           <div class="col-md-12">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>
-                    <div class="checkbox">
-                      <input type="checkbox">
-                    </div>
-                  </th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Username</th>
-                  <th>Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="checkbox">
-                      <input type="checkbox">
-                    </div>
-                  </td>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>
-                    <i class="btn btn-action material-icons">bookmark</i>
-                    <i class="btn btn-action material-icons">edit</i>
-                    <i class="btn btn-action material-icons">delete</i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="checkbox">
-                      <input type="checkbox">
-                    </div>
-                  </td>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                  <td>
-                    <i class="btn btn-action material-icons">bookmark</i>
-                    <i class="btn btn-action material-icons">edit</i>
-                    <i class="btn btn-action material-icons">delete</i>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="checkbox">
-                      <input type="checkbox">
-                    </div>
-                  </td>
-                  <td>Larry</td>
-                  <td>the Bird</td>
-                  <td>@twitter</td>
-                  <td>
-                    <i class="btn btn-action material-icons">bookmark</i>
-                    <i class="btn btn-action material-icons">edit</i>
-                    <i class="btn btn-action material-icons">delete</i>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="checkbox">
+                        <input type="checkbox">
+                      </div>
+                    </th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <input type="checkbox">
+                      </div>
+                    </td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <input type="checkbox">
+                      </div>
+                    </td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <input type="checkbox">
+                      </div>
+                    </td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <input type="checkbox">
+                      </div>
+                    </td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <input type="checkbox">
+                      </div>
+                    </td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <input type="checkbox">
+                      </div>
+                    </td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
 
@@ -339,7 +423,7 @@
                   </thead>
                 </table>
               </div>
-              <div class="fixed-body" style="height: 141px">
+              <div class="fixed-body" style="height: 189px">
                 <table class="table">
                   <tbody>
                     <tr>
@@ -372,6 +456,16 @@
                       <td>the Bird</td>
                       <td>@twitter</td>
                     </tr>
+                    <tr>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -379,10 +473,141 @@
           </div>
         </div>
 
-        <div id="thumbnails" class="page-header">
-          <h1>Thumbnails</h1>
+        <div id="cards" class="page-header">
+          <h1>Cards</h1>
         </div>
-        <img data-src="holder.js/200x200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
+        
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+             <div class="card">
+               <div class="card-rich-media"><img src="./img/img1.jpg" alt="Crab at the beach" class="img-responsive"></div>
+               <div class="card-primary-title">
+                  <div class="title">
+                    Title goes Header
+                    <small>Secondary text</small>
+                  </div>
+               </div>
+               <div class="card-supporting-text hidden-xs">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.
+               </div>
+               <div class="card-actions">
+                  <div class="button-group">
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION 1</button>
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION 2</button>
+                  </div>
+               </div>
+             </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-rich-media"><img src="./img/img2.jpg" alt="Crab at the beach" class="img-responsive"></div>
+              <div class="card-primary-title">
+                  <div class="title">
+                    Title goes Header
+                    <small>Secondary text</small>
+                  </div>
+               </div>
+              <div class="card-supporting-text hidden-xs">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.
+              </div>
+              <div class="card-actions">
+                 <div class="buttons">
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION 1</button>
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION 2</button>
+                 </div>
+                 <div class="action-buttons">
+                    <i class="btn btn-action material-icons">bookmark</i>
+                    <i class="btn btn-action material-icons">delete</i>
+                 </div>
+              </div>
+            </div>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="card">
+            <div class="card-rich-media"><img src="./img/img3.jpg" alt="Crab at the beach" class="img-responsive"></div>
+            <div class="card-primary-title">
+                <div class="title">
+                  Title goes Header
+                  <small>Secondary text</small>
+                </div>
+             </div>
+            <div class="card-supporting-text hidden-xs">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.
+            </div>
+            <div class="card-actions">
+                <button type="button" class="btn btn-flat btn-default ripple-black-30">ACTION</button>
+                <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-primary-title">
+                <div class="avatar-pic">
+                    <img src="./img/img4.jpg" alt="Crab at the beach" class="img-responsive">
+                </div>
+                <div class="title">
+                    Title goes Header
+                    <small>Secondary text</small>
+                </div>
+              </div>
+              <div class="card-rich-media"><img src="./img/img4.jpg" alt="Crab at the beach" class="img-responsive"></div>
+              <div class="card-supporting-text hidden-xs">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+              <div class="card-actions">
+                  <div class="buttons">
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">READ</button>
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">SHARE</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="card">
+                <div class="card-rich-media"><img src="./img/img5.jpg" alt="Crab at the beach" class="img-responsive"></div>
+                <div class="card-primary-title">
+                    <div class="title">
+                      Title goes Header
+                      <small>Secondary text</small>
+                    </div>
+                 </div>
+                <div id="cardExpansion" class="card-supporting-text collapse">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.</p>
+                </div>
+                <span class="card-divider"></span>
+                <div class="card-actions">
+                    <button type="button" data-toggle="collapse" data-target="#cardExpansion" aria-expanded="false" class="btn btn-flat btn-primary ripple-black-30"><span class="text-collapsed">EXPAND</span><span class="text-expanded">COLLAPSE</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="card">
+                <div class="card-rich-media"><img src="./img/img6.jpg" alt="Crab at the beach" class="img-responsive"></div>
+                <div class="card-primary-title">
+                    <div class="title">
+                      Title goes Header
+                      <small>Secondary text</small>
+                    </div>
+                 </div>
+                <div class="card-supporting-text hidden-xs">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.
+                </div>
+                <span class="card-divider"></span>
+                <div class="card-supporting-text hidden-xs">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.
+                </div>
+                <div class="card-actions">
+                    <button type="button" class="btn btn-flat btn-default ripple-black-30">ACTION</button>
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION</button>
+                </div>
+              </div>
+            </div>
+        </div>
 
 
         <div id="labels" class="page-header">

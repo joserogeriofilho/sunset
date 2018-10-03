@@ -94,6 +94,12 @@ html, body, .container-fluid, .wrapper {
   background-color: rgba(217, 217, 219, 0.5);
   border-radius: 0px; }
 
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
 #content {
   position: relative; }
   @media screen and (max-width: 991px) {
@@ -269,7 +275,7 @@ h3 {
     font-size: 11px;
     padding: 8px 12px 8px 12px; }
   .btn.btn-raised {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24); }
     .btn.btn-raised:first-child {
       margin-left: 0px; }
     .btn.btn-raised:last-child {
@@ -322,9 +328,17 @@ h3 {
     margin: 4px; }
     .btn.btn-action:first-child {
       margin-left: 0; }
+  .btn .text-collapsed {
+    display: block; }
+  .btn .text-expanded {
+    display: none; }
+  .btn[aria-expanded=true] .text-collapsed {
+    display: none; }
+  .btn[aria-expanded=true] .text-expanded {
+    display: block; }
 
 .table {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
   border: 1px solid rgba(217, 217, 219, 0.5);
   border-bottom: 0;
   border-radius: 4px;
@@ -346,14 +360,85 @@ h3 {
     padding: 4px 8px 4px 8px; }
   .table.table-condensed tbody tr td {
     padding: 4px 8px 4px 8px; }
-  .table.table-fixed-header table {
-    table-layout: fixed; }
-  .table.table-fixed-header .table {
-    margin: 0;
-    border: none; }
-  .table.table-fixed-header .fixed-header table thead tr th {
-    border-color: rgba(217, 217, 219, 0.5);
-    border-style: solid;
-    border-width: 0 0 1px 0; }
-  .table.table-fixed-header .fixed-body {
+  .table.table-fixed-header {
     overflow-y: auto; }
+    .table.table-fixed-header table {
+      table-layout: fixed; }
+    .table.table-fixed-header .table {
+      margin: 0;
+      border: none; }
+    .table.table-fixed-header .fixed-header {
+      position: sticky;
+      top: 0;
+      left: 0; }
+      .table.table-fixed-header .fixed-header .table {
+        box-shadow: none; }
+      .table.table-fixed-header .fixed-header table thead tr th {
+        border-color: rgba(217, 217, 219, 0.5);
+        border-style: solid;
+        border-width: 0 0 1px 0; }
+
+.table-responsive {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  border: 1px solid rgba(217, 217, 219, 0.5); }
+  .table-responsive .table {
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0; }
+
+.card {
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  padding: 16px; }
+  .card .card-rich-media {
+    margin: -16px -16px 16px -16px; }
+    .card .card-rich-media img {
+      border-radius: 4px 4px 0 0; }
+  .card .card-primary-title {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px; }
+    .card .card-primary-title .avatar-pic {
+      margin-right: 16px; }
+      .card .card-primary-title .avatar-pic img {
+        height: 48px;
+        width: 48px;
+        border-radius: 100%; }
+    .card .card-primary-title .title {
+      display: flex;
+      flex-direction: column;
+      font-size: 21px;
+      font-weight: 700; }
+      .card .card-primary-title .title small {
+        color: #66666F;
+        font-size: 14px;
+        font-weight: 400; }
+  .card .card-supporting-text {
+    color: #66666F;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px; }
+  .card .card-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -8px -8px -8px; }
+  .card .card-divider {
+    border-style: solid;
+    margin-left: -16px;
+    margin-right: -16px;
+    border-color: #D9D9DB;
+    border-width: 1px;
+    border-bottom: 1px;
+    margin-bottom: 20px; }
+    .card .card-divider + .card-actions {
+      margin-top: -12px; }
+  .card .card-primary-title + .card-rich-media {
+    margin: 0 -16px 16px -16px; }
+    .card .card-primary-title + .card-rich-media img {
+      border-radius: 0; }

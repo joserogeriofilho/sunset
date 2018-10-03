@@ -1,0 +1,84 @@
+.card{
+    background-color: white;
+    box-shadow: $shadow-ud-1;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    padding: 16px;
+
+    .card-rich-media{
+        margin: -16px -16px 16px -16px;
+
+        img{
+            border-radius: 4px 4px 0 0;
+        }
+    }
+
+    .card-primary-title{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+
+        .avatar-pic{
+            margin-right: 16px;
+
+            img{
+                height: 48px;
+                width: 48px;
+                border-radius: 100%;
+            }
+        }
+
+        .title{
+            display: flex;
+            flex-direction: column;
+            font-size: 21px;
+            font-weight: 700;
+
+            small{
+                color: $gray400;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .card-supporting-text{
+        color: $gray400;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .card-actions{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        margin: 0 -8px -8px -8px;
+    }
+
+    .card-divider{
+        border-style: solid;
+        margin-left: -16px;
+        margin-right: -16px;
+        border-color: $gray100;
+        border-width: 1px;
+        border-bottom: 1px;
+        margin-bottom: 20px;
+
+        & + .card-actions{
+            margin-top: -12px;
+        }
+    }
+
+    .card-primary-title + .card-rich-media{
+        margin: 0 -16px 16px -16px;
+
+        img{
+            border-radius: 0;
+        }
+    }
+}
