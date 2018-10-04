@@ -188,33 +188,72 @@ html, body, .container-fluid, .wrapper {
   padding: 16px;
   z-index: 90; }
 
-.form-group {
-  height: 48px; }
-  .form-group .form-control {
-    border-width: 0px 0px 1px 0px;
-    border-radius: 0;
-    box-shadow: initial;
-    font-size: 16px;
-    padding: 0px;
-    transition: 0.2s ease-in-out; }
-  .form-group label {
+.form-group.material-input {
+  min-height: 56px;
+  transition: 0.2s ease-in-out; }
+  .form-group.material-input label {
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 0;
+    margin-top: -2px;
     position: relative;
-    transition: 0.2s ease-in-out;
-    top: 33px; }
-    .form-group label.label-outside-form {
+    top: 24px;
+    transition: 0.2s ease-in-out; }
+    .form-group.material-input label.label-focused {
+      color: #D48B00; }
+    .form-group.material-input label.label-outside-input {
       font-size: 12px;
-      top: 8px; }
+      position: relative;
+      top: 0px;
+      transition: 0.2s ease-in-out; }
+  .form-group.material-input input {
+    font-size: 16px;
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding-left: 0; }
+    .form-group.material-input input:focus {
+      border-color: #D48B00;
+      border-width: 0px 0px 2px 0px;
+      box-shadow: none; }
 
-.form-group-focused .form-control {
-  border-color: #D48B00;
-  border-width: 0px 0px 2px 0px;
-  box-shadow: initial; }
+/*.form-group{
+    height: 48px;
 
-.form-group-focused label {
-  color: #D48B00; }
+    .form-control{
+        border-width: 0px 0px 1px 0px;
+        border-radius: 0;
+        box-shadow: initial;
+        font-size: 16px;
+        padding: 0px;
+        transition: $tlabels;
+    }
 
+    label{
+        font-size: 16px;
+        font-weight: 400;
+        position: relative;
+        transition: $tlabels;
+        top: 33px;
+
+        &.label-outside-form{
+            font-size: 12px;
+            top: 8px;
+        }
+    }
+}
+
+.form-group-focused{
+    .form-control{
+        border-color: $primary;
+        border-width: 0px 0px 2px 0px;
+        box-shadow: initial;
+    }
+
+    label{
+        color: $primary;
+    }
+}*/
 html, body, .container-fluid {
   font-family: 'Roboto', sans-serif; }
 
@@ -328,9 +367,9 @@ h3 {
     margin: 4px; }
     .btn.btn-action:first-child {
       margin-left: 0; }
-  .btn .text-collapsed {
+  .btn[aria-expanded=false] .text-collapsed {
     display: block; }
-  .btn .text-expanded {
+  .btn[aria-expanded=false] .text-expanded {
     display: none; }
   .btn[aria-expanded=true] .text-collapsed {
     display: none; }

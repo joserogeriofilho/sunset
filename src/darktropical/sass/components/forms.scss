@@ -1,0 +1,39 @@
+.form-group.material-input{
+    min-height: 56px;
+    transition: $tlabels;
+
+    label{
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 0;
+        margin-top: -2px;
+        position: relative;
+        top: 24px;
+        transition: $tlabels;
+
+        &.label-focused{
+            color: $primary;
+        }
+
+        &.label-outside-input{
+            font-size: 12px;
+            position: relative;
+            top: 0px;
+            transition: $tlabels;
+        }
+    }
+
+    input{
+        font-size: 16px;
+        border-width: 0 0 1px 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding-left: 0;
+
+        &:focus{
+            border-color: $primary;
+            border-width: 0px 0px 2px 0px;
+            box-shadow: none;
+        }
+    }
+}

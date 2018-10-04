@@ -43,7 +43,7 @@ $( document ).ready(function() {
         hideSidebar();
     });
 
-    $("body").swipe( {
+    $("#sidebar").swipe( {
         swipeLeft:function(event, direction, distance, duration, fingerCount) {
             hideSidebar();
         },
@@ -55,18 +55,22 @@ $( document ).ready(function() {
 
     // INPUTS
 
-    // Verify if an input has content, if it does, stops the label from becoming a placeholder
     $(".form-group").on("focusin", function(){
-        $(this).addClass("form-group-focused");
-        $(this).children("label").addClass("label-outside-form");
+        var label = $(this).children("label");
+
+        label.addClass("label-focused");
+        label.addClass("label-outside-input");
     });
 
     $(".form-group").on("focusout", function(){
-        $(this).removeClass("form-group-focused");
+        var label = $(this).children("label");
+        var input = $(this).children("input");
 
-        if( !$(this).children("input").val() ) {
-            $(this).children("label").removeClass("label-outside-form");
-        }
+        label.removeClass("label-focused");
+
+        // If input is empty
+        if(!input.val())
+            label.removeClass("label-outside-input");
     });
     
 });
