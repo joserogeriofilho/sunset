@@ -192,6 +192,7 @@ html, body, .container-fluid, .wrapper {
   min-height: 56px;
   transition: 0.2s ease-in-out; }
   .form-group.material-input label {
+    color: #66666F;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 0;
@@ -199,13 +200,13 @@ html, body, .container-fluid, .wrapper {
     position: relative;
     top: 24px;
     transition: 0.2s ease-in-out; }
-    .form-group.material-input label.label-focused {
-      color: #D48B00; }
     .form-group.material-input label.label-outside-input {
       font-size: 12px;
       position: relative;
-      top: 0px;
+      top: 4px;
       transition: 0.2s ease-in-out; }
+      .form-group.material-input label.label-outside-input.label-focused {
+        color: #D48B00; }
   .form-group.material-input input {
     font-size: 16px;
     border-width: 0 0 1px 0;
@@ -217,43 +218,38 @@ html, body, .container-fluid, .wrapper {
       border-width: 0px 0px 2px 0px;
       box-shadow: none; }
 
-/*.form-group{
-    height: 48px;
+.checkbox {
+  display: flex;
+  align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .checkbox label {
+    margin-left: 24px; }
+    .checkbox label input[type=checkbox] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+      .checkbox label input[type=checkbox]:checked ~ .checkmark {
+        border: none;
+        background: linear-gradient(to right, #FE4D42, #FEEE5B); }
+    .checkbox label .checkmark {
+      border-style: solid;
+      border-width: 2px;
+      border-color: #8C8C93;
+      border-radius: 2px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 24px;
+      width: 24px; }
 
-    .form-control{
-        border-width: 0px 0px 1px 0px;
-        border-radius: 0;
-        box-shadow: initial;
-        font-size: 16px;
-        padding: 0px;
-        transition: $tlabels;
-    }
+.form-buttons {
+  margin-top: 24px; }
 
-    label{
-        font-size: 16px;
-        font-weight: 400;
-        position: relative;
-        transition: $tlabels;
-        top: 33px;
-
-        &.label-outside-form{
-            font-size: 12px;
-            top: 8px;
-        }
-    }
-}
-
-.form-group-focused{
-    .form-control{
-        border-color: $primary;
-        border-width: 0px 0px 2px 0px;
-        box-shadow: initial;
-    }
-
-    label{
-        color: $primary;
-    }
-}*/
 html, body, .container-fluid {
   font-family: 'Roboto', sans-serif; }
 
