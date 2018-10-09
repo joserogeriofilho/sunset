@@ -50,6 +50,7 @@
 
     label{
         margin-left: 24px;
+        margin-top: 2px;
 
         input[type=checkbox]{
             position: absolute;
@@ -60,7 +61,11 @@
     
             &:checked ~ .checkmark{
                 border: none;
-                background: $gradient-primary-right;
+                background-color: $primary;
+
+                &:after {
+                    display: block;
+                }
             }
         }    
         
@@ -74,6 +79,22 @@
             left: 0;
             height: 24px;
             width: 24px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                display: none;
+
+                left: 9px;
+                top: 5px;
+                width: 6px;
+                height: 12px;
+                border: solid white;
+                border-width: 0 2px 2px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
         }
     }
 }

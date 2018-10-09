@@ -226,7 +226,8 @@ html, body, .container-fluid, .wrapper {
   -ms-user-select: none;
   user-select: none; }
   .checkbox label {
-    margin-left: 24px; }
+    margin-left: 24px;
+    margin-top: 2px; }
     .checkbox label input[type=checkbox] {
       position: absolute;
       opacity: 0;
@@ -235,7 +236,9 @@ html, body, .container-fluid, .wrapper {
       width: 0; }
       .checkbox label input[type=checkbox]:checked ~ .checkmark {
         border: none;
-        background: linear-gradient(to right, #FE4D42, #FEEE5B); }
+        background-color: #D48B00; }
+        .checkbox label input[type=checkbox]:checked ~ .checkmark:after {
+          display: block; }
     .checkbox label .checkmark {
       border-style: solid;
       border-width: 2px;
@@ -246,6 +249,19 @@ html, body, .container-fluid, .wrapper {
       left: 0;
       height: 24px;
       width: 24px; }
+      .checkbox label .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 9px;
+        top: 5px;
+        width: 6px;
+        height: 12px;
+        border: solid white;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
 
 .form-buttons {
   margin-top: 24px; }
