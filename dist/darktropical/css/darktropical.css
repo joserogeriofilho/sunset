@@ -306,6 +306,32 @@ html, body, .container-fluid, .wrapper {
         border-radius: 50%;
         background: #D48B00; }
 
+.fileinput {
+  width: 100%; }
+  .fileinput label {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start; }
+    .fileinput label input[type=file] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0; }
+    .fileinput label .btn-file {
+      margin-left: 0;
+      margin-right: 12px; }
+    .fileinput label .file-name {
+      color: #66666F;
+      border-width: 0 0 1px 0;
+      border-color: #B3B3B7;
+      border-style: solid;
+      font-size: 16px;
+      font-weight: 400;
+      padding-bottom: 8px;
+      width: 100%; }
+
 .form-buttons {
   margin-top: 24px; }
 
