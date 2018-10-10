@@ -72,5 +72,11 @@ $( document ).ready(function() {
         if(!input.val())
             label.removeClass("label-outside-input");
     });
+
+    // file input
+    $('input[type=file]').change(function(e){
+        $in=$(this);
+        $in.siblings(".file-name").text($in.val().split('\\').pop());
+      });
     
 });

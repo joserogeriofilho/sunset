@@ -330,7 +330,13 @@ html, body, .container-fluid, .wrapper {
       font-size: 16px;
       font-weight: 400;
       padding-bottom: 8px;
-      width: 100%; }
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+  .fileinput .help-block {
+    color: #B3B3B7;
+    font-size: 12px; }
 
 .form-buttons {
   margin-top: 24px; }

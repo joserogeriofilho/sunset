@@ -188,7 +188,16 @@
             font-weight: 400;
             padding-bottom: 8px;
             width: 100%;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
+    }
+
+    .help-block{
+        color: $gray200;
+        font-size: 12px;
     }
 
 }
