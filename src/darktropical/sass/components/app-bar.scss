@@ -1,6 +1,28 @@
 .app-bar{
-    background: linear-gradient(to right, $gray500 , $gray600);
+    background: $gradient-dark-gray;
+    box-shadow: $shadow-ud-2;
+    display: none;
+    width: 100%;
     min-height: 56px;
-    padding: 16px;
+    padding: 0 16px 0 16px;
+    position: fixed;
     z-index: 90;
+
+    @media screen and (max-width: $break-sm) {
+        display: flex;
+        align-items: center;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+
+        margin: 0;
+        padding: 0;
+
+        .icon-app-bar{
+            font-size: 24px;
+            color: white;
+        }
+    }
 }

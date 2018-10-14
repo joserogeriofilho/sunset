@@ -10,6 +10,10 @@ html, body, .container-fluid, .wrapper{
 .container-fluid{
     overflow-y: scroll;
     padding: 50px 50px 50px 30px;
+
+    @media screen and (max-width: $break-sm) {
+        padding: 16px 16px 16px 16px;   
+    }
 }
 
 .modal{
@@ -46,6 +50,6 @@ html, body, .container-fluid, .wrapper{
 
     @media screen and (max-width: $break-sm) {
         margin-top: 56px;
-        padding: 24px;    
+        padding: 16px;    
     }
 }

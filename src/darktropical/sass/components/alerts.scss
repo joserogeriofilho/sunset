@@ -1,0 +1,21 @@
+.alert{
+    background: $gradient-dark-gray;
+    border: none;
+    box-shadow: $shadow-ud-2;
+    
+    &.alert-info{
+        color: $blue300;
+    }
+
+    &.alert-success{
+        color: $green200;
+    }
+
+    &.alert-warning{
+        color: $orange300;
+    }
+
+    &.alert-danger{
+        color: $red400;
+    }
+}
