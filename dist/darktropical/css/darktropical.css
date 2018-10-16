@@ -237,6 +237,31 @@ html, body, .container-fluid, .wrapper {
       border-width: 0px 0px 2px 0px;
       box-shadow: none; }
 
+.form-group.material-select label {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0; }
+  .form-group.material-select label.label-focused {
+    color: #D48B00; }
+    .form-group.material-select label.label-focused + select {
+      border-color: #D48B00; }
+
+.form-group.material-select select {
+  box-shadow: none;
+  border-width: 0 0 1px 0;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 6px 0 6px 0; }
+  .form-group.material-select select[multiple] {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin-top: 6px; }
+    .form-group.material-select select[multiple] option {
+      padding: 2px 0 2px 12px; }
+  .form-group.material-select select option {
+    padding: 6px 0 6px 0; }
+    .form-group.material-select select option:checked, .form-group.material-select select option:hover {
+      box-shadow: 0 0 10px 100px #D48B00 inset; }
+
 .checkbox {
   display: flex;
   align-items: center;

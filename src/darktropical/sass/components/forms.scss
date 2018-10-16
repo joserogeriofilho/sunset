@@ -1,40 +1,83 @@
-.form-group.material-input{
-    min-height: 56px;
-    transition: $tlabels;
-
-    label{
-        color: $gray400;
-        font-size: 16px;
-        font-weight: 400;
-        margin-bottom: 0;
-        margin-top: -2px;
-        position: relative;
-        top: 24px;
+.form-group{
+    &.material-input{
+        min-height: 56px;
         transition: $tlabels;
 
-        &.label-outside-input{
-            font-size: 12px;
+        label{
+            color: $gray400;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 0;
+            margin-top: -2px;
             position: relative;
-            top: 4px;
+            top: 24px;
             transition: $tlabels;
 
-            &.label-focused{
-                color: $primary;
+            &.label-outside-input{
+                font-size: 12px;
+                position: relative;
+                top: 4px;
+                transition: $tlabels;
+
+                &.label-focused{
+                    color: $primary;
+                }
+            }
+        }
+
+        input{
+            font-size: 16px;
+            border-width: 0 0 1px 0;
+            border-radius: 0;
+            box-shadow: none;
+            padding-left: 0;
+
+            &:focus{
+                border-color: $primary;
+                border-width: 0px 0px 2px 0px;
+                box-shadow: none;
             }
         }
     }
 
-    input{
-        font-size: 16px;
-        border-width: 0 0 1px 0;
-        border-radius: 0;
-        box-shadow: none;
-        padding-left: 0;
+    &.material-select{
+        label{
+            font-size: 12px;
+            font-weight: 400;
+            margin: 0;
 
-        &:focus{
-            border-color: $primary;
-            border-width: 0px 0px 2px 0px;
+            &.label-focused{
+                color: $primary;
+
+                &+select{
+                    border-color: $primary;
+                }
+            }
+        }
+
+        select{
             box-shadow: none;
+            border-width: 0 0 1px 0;
+            border-radius: 0;
+            font-size: 16px;
+            padding: 6px 0 6px 0;
+
+            &[multiple]{
+                box-shadow: $shadow-ud-2;
+                margin-top: 6px;
+
+                option{
+                    padding: 2px 0 2px 12px;
+                }
+            }
+
+            option{
+                padding: 6px 0 6px 0;
+
+                &:checked, &:hover{
+                    box-shadow: 0 0 10px 100px $primary inset;
+                }
+            }
         }
     }
 }
