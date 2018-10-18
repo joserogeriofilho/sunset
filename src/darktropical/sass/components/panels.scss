@@ -1,0 +1,15 @@
+.panel{
+    border: none !important;
+    box-shadow: $shadow-ud-1;
+
+    .panel-heading{
+        background: white;
+        color: $gray300;
+        font-weight: 500;
+        padding: 16px 30px 16px 30px;
+    }
+
+    .panel-body{
+        padding: 30px;
+    }
+}

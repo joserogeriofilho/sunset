@@ -448,7 +448,7 @@ h3 {
     font-size: 11px;
     padding: 8px 12px 8px 12px; }
   .btn.btn-raised {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24); }
+    box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.24); }
     .btn.btn-raised:first-child {
       margin-left: 0px; }
     .btn.btn-raised:last-child {
@@ -514,7 +514,7 @@ p .btn {
   margin-bottom: 16px; }
 
 .table {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.24);
   border: 1px solid rgba(217, 217, 219, 0.5);
   border-bottom: 0;
   border-radius: 4px;
@@ -555,8 +555,8 @@ p .btn {
         border-width: 0 0 1px 0; }
 
 .table-responsive {
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
-  border: 1px solid rgba(217, 217, 219, 0.5); }
+  box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.24);
+  border: none; }
   .table-responsive .table {
     box-shadow: none;
     border: none;
@@ -564,7 +564,7 @@ p .btn {
 
 .card {
   background-color: white;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.24);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
@@ -631,3 +631,14 @@ p .btn {
     color: #E5B966; }
   .alert.alert-danger {
     color: #FE7A71; }
+
+.panel {
+  border: none !important;
+  box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.24); }
+  .panel .panel-heading {
+    background: white;
+    color: #8C8C93;
+    font-weight: 500;
+    padding: 16px 30px 16px 30px; }
+  .panel .panel-body {
+    padding: 30px; }
