@@ -254,10 +254,13 @@ html, body, .container-fluid, .wrapper {
   padding: 6px 0 6px 0; }
   .form-group.material-select select[multiple] {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    margin-top: 6px; }
+    margin-top: 6px;
+    min-height: 100px;
+    font-size: 14px; }
     .form-group.material-select select[multiple] option {
       padding: 2px 0 2px 12px; }
   .form-group.material-select select option {
+    font-size: 14px;
     padding: 6px 0 6px 0; }
     .form-group.material-select select option:checked, .form-group.material-select select option:hover {
       box-shadow: 0 0 10px 100px #D48B00 inset; }

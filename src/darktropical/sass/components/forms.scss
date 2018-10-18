@@ -65,6 +65,8 @@
             &[multiple]{
                 box-shadow: $shadow-ud-2;
                 margin-top: 6px;
+                min-height: 100px;
+                font-size: 14px;
 
                 option{
                     padding: 2px 0 2px 12px;
@@ -72,6 +74,7 @@
             }
 
             option{
+                font-size: 14px;
                 padding: 6px 0 6px 0;
 
                 &:checked, &:hover{
