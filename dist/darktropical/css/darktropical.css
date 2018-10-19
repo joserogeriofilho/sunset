@@ -69,6 +69,16 @@
     opacity: 0.65;
     transition: 0s; }
 
+.icon-list {
+  border: none;
+  color: #8C8C93;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px; }
+  .icon-list.icon-large {
+    font-size: 40px;
+    line-height: 40px; }
+
 html, body, .container-fluid, .wrapper {
   height: 100%; }
 
@@ -253,7 +263,7 @@ html, body, .container-fluid, .wrapper {
   font-size: 16px;
   padding: 6px 0 6px 0; }
   .form-group.material-select select[multiple] {
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.24);
     margin-top: 6px;
     min-height: 100px;
     font-size: 14px; }
@@ -635,12 +645,20 @@ p .btn {
 .list-group {
   border: none;
   padding: 8px 0 8px 0; }
-  .list-group .btn-action {
-    margin: 0 32px 0 0; }
   .list-group .list-group-item {
     border: none;
     min-height: 48px;
-    padding: 16px; }
+    padding: 16px;
+    display: flex;
+    align-items: center; }
+    .list-group .list-group-item .supporting-visuals {
+      line-height: 0; }
+      .list-group .list-group-item .supporting-visuals .icon-list {
+        margin: 0 32px 0 0; }
+        .list-group .list-group-item .supporting-visuals .icon-list.icon-large {
+          margin: 0 16px 0 0; }
+    .list-group .list-group-item .primary-text {
+      width: 100%; }
   .list-group.two-lines .list-group-item {
     min-height: 64px; }
 

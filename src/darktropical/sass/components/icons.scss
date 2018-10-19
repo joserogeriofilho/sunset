@@ -1,0 +1,12 @@
+.icon-list{
+    border: none;
+    color: $gray300;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+
+    &.icon-large { 
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
