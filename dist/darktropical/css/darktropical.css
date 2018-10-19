@@ -75,7 +75,7 @@ html, body, .container-fluid, .wrapper {
 .container-fluid {
   overflow-y: scroll;
   padding: 50px 50px 50px 30px; }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1200px) {
     .container-fluid {
       padding: 16px 16px 16px 16px; } }
 
@@ -105,7 +105,7 @@ html, body, .container-fluid, .wrapper {
 
 #content {
   position: relative; }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1200px) {
     #content {
       margin-top: 56px;
       padding: 16px; } }
@@ -178,7 +178,7 @@ html, body, .container-fluid, .wrapper {
   .sidebar.sidebar-mobile-visible {
     box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
     margin-left: 0px; }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1200px) {
     .sidebar {
       box-shadow: none;
       margin-left: -256px;
@@ -194,7 +194,7 @@ html, body, .container-fluid, .wrapper {
   padding: 0 16px 0 16px;
   position: fixed;
   z-index: 90; }
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 1200px) {
     .app-bar {
       display: flex;
       align-items: center; } }
@@ -631,6 +631,18 @@ p .btn {
     color: #E5B966; }
   .alert.alert-danger {
     color: #FE7A71; }
+
+.list-group {
+  border: none;
+  padding: 8px 0 8px 0; }
+  .list-group .btn-action {
+    margin: 0 32px 0 0; }
+  .list-group .list-group-item {
+    border: none;
+    min-height: 48px;
+    padding: 16px; }
+  .list-group.two-lines .list-group-item {
+    min-height: 64px; }
 
 .panel {
   border: none !important;

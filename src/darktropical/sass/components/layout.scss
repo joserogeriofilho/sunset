@@ -11,7 +11,7 @@ html, body, .container-fluid, .wrapper{
     overflow-y: scroll;
     padding: 50px 50px 50px 30px;
 
-    @media screen and (max-width: $break-sm) {
+    @media screen and (max-width: $break-md) {
         padding: 16px 16px 16px 16px;   
     }
 }
@@ -48,7 +48,7 @@ html, body, .container-fluid, .wrapper{
 #content{
     position: relative;
 
-    @media screen and (max-width: $break-sm) {
+    @media screen and (max-width: $break-md) {
         margin-top: 56px;
         padding: 16px;    
     }

@@ -8,7 +8,7 @@
     position: fixed;
     z-index: 90;
 
-    @media screen and (max-width: $break-sm) {
+    @media screen and (max-width: $break-md) {
         display: flex;
         align-items: center;
     }
