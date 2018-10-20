@@ -73,7 +73,6 @@ html, body, .container-fluid, .wrapper{
     position: relative;
 
     @media screen and (max-width: $break-md) {
-        margin-top: 56px;
-        padding: 16px;    
+        padding: 72px 16px 16px 16px;    
     }
 }

@@ -133,8 +133,7 @@ html, body, .container-fluid, .wrapper {
   position: relative; }
   @media screen and (max-width: 1200px) {
     #content {
-      margin-top: 56px;
-      padding: 16px; } }
+      padding: 72px 16px 16px 16px; } }
 
 .sidebar {
   background: linear-gradient(to right, #40404B, #303038);
