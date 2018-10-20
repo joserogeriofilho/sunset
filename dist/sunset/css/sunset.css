@@ -230,7 +230,12 @@ html, body, .container-fluid, .wrapper {
     padding: 0; }
     .app-bar .container .icon-app-bar {
       font-size: 24px;
-      color: white; }
+      color: white;
+      margin-right: 32px; }
+    .app-bar .container .title {
+      color: white;
+      font-size: 14px;
+      font-weight: 500; }
 
 .form-group.material-input {
   min-height: 56px;
