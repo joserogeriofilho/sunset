@@ -1,3 +1,3 @@
-node-sass --watch src/darktropical/sass/darktropical.scss dist/darktropical/css/darktropical.css
+node-sass --watch src/sunset/sass/sunset.scss dist/sunset/css/sunset.css
 
-node-sass src/darktropical/sass/darktropical.scss dist/darktropical/css/darktropical.css
+node-sass src/sunset/sass/sunset.scss dist/sunset/css/sunset.css
