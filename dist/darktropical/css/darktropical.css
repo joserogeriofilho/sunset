@@ -89,6 +89,22 @@ html, body, .container-fluid, .wrapper {
     .container-fluid {
       padding: 16px 16px 16px 16px; } }
 
+.login-screen {
+  background: linear-gradient(to right, #40404B, #303038); }
+  .login-screen .container {
+    height: 100%;
+    padding: 0 56px 0 56px; }
+    .login-screen .container .row {
+      height: 100%; }
+      .login-screen .container .row div[class^="col-"] {
+        height: 100%; }
+
+.vertical-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
 .modal {
   background-color: rgba(32, 32, 38, 0.65);
   display: block;
@@ -237,15 +253,20 @@ html, body, .container-fluid, .wrapper {
       .form-group.material-input label.label-outside-input.label-focused {
         color: #D48B00; }
   .form-group.material-input input {
-    font-size: 16px;
+    background: transparent;
     border-width: 0 0 1px 0;
     border-radius: 0;
     box-shadow: none;
+    font-size: 16px;
     padding-left: 0; }
     .form-group.material-input input:focus {
       border-color: #D48B00;
       border-width: 0px 0px 2px 0px;
       box-shadow: none; }
+  .form-group.material-input.dark label {
+    color: #8C8C93; }
+  .form-group.material-input.dark input {
+    color: #B3B3B7; }
 
 .form-group.material-select label {
   font-size: 12px;
@@ -319,6 +340,8 @@ html, body, .container-fluid, .wrapper {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg); }
+  .checkbox.dark label {
+    color: #8C8C93; }
 
 .radiobutton {
   display: block;
@@ -442,6 +465,17 @@ h3 {
   font-weight: 400;
   line-height: 28px; }
 
+.login-screen h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center; }
+
+.login-screen p {
+  color: #B3B3B7;
+  margin: 30px 0 0 0;
+  text-align: center; }
+
 .btn {
   border: none;
   font-weight: 500;
@@ -519,6 +553,19 @@ h3 {
     display: none; }
   .btn[aria-expanded=true] .text-expanded {
     display: block; }
+  .btn.btn-round {
+    border-radius: 99px;
+    margin: 30px 0 0 0;
+    width: 100%; }
+    .btn.btn-round + .btn-round {
+      margin-top: 24px; }
+  .btn.btn-dark-outline {
+    background: transparent;
+    border-color: #B3B3B7;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+    font-weight: 400; }
 
 p .btn {
   margin-bottom: 16px; }
@@ -661,6 +708,15 @@ p .btn {
       width: 100%; }
   .list-group.two-lines .list-group-item {
     min-height: 64px; }
+    .list-group.two-lines .list-group-item .primary-text {
+      display: flex;
+      flex-direction: column; }
+      .list-group.two-lines .list-group-item .primary-text .primary-line {
+        margin: 0; }
+      .list-group.two-lines .list-group-item .primary-text .secondary-line {
+        color: #8C8C93;
+        font-size: 12px;
+        margin: 0; }
 
 .panel {
   border: none !important;

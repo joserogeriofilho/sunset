@@ -28,28 +28,34 @@
     <script src="./dist/darktropical/js/darktropical.js"></script>
   </head>
 
-  <body>
+  <body class="login-screen">
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
-          <form>
-            <div style="height: 80px"></div>
-            <div class="form-group material-input">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1">
-            </div>
-            <div class="form-group  material-input">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Check me out
-              </label>
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
+        <div class="col-xs-12 col-md-offset-3 col-md-6 col-lg-offset-4 col-lg-4">
+          <div class="vertical-center">
+            <h1>SUNSET</h1>
+            <form action="./index.html">
+              <div class="form-group material-input dark">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="form-group  material-input dark">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="checkbox dark">
+                <label>Remember my password
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>                
+              </div>
+              <button type="submit" class="btn btn-raised btn-primary ripple-90 btn-round">LOGIN</button>
+              <p>Or</p>
+              <button type="submit" class="btn btn-round btn-dark-outline ripple-90 ">LOGIN WITH FACEBOOK</button>
+              <button type="submit" class="btn btn-round btn-dark-outline ripple-90">LOGIN WITH TWITTER</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

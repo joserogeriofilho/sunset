@@ -126,6 +126,25 @@
             display: block;
         }
     }
+
+    &.btn-round{
+        border-radius: 99px;
+        margin: 30px 0 0 0;
+        width: 100%;
+
+        & + .btn-round{
+            margin-top: 24px;
+        }
+    }
+
+    &.btn-dark-outline{
+        background: transparent;
+        border-color: $gray200;
+        border-style: solid;
+        border-width: 1px;
+        color: white;
+        font-weight: 400;
+    }
 }
 
 p{

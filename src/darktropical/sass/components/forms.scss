@@ -1,4 +1,5 @@
 .form-group{
+
     &.material-input{
         min-height: 56px;
         transition: $tlabels;
@@ -26,16 +27,27 @@
         }
 
         input{
-            font-size: 16px;
+            background: transparent;
             border-width: 0 0 1px 0;
             border-radius: 0;
             box-shadow: none;
+            font-size: 16px;
             padding-left: 0;
 
             &:focus{
                 border-color: $primary;
                 border-width: 0px 0px 2px 0px;
                 box-shadow: none;
+            }
+        }
+
+        &.dark{
+            label{
+                color: $gray300;
+            }
+
+            input{
+                color: $gray200;
             }
         }
     }
@@ -141,6 +153,12 @@
                 -ms-transform: rotate(45deg);
                 transform: rotate(45deg);
             }
+        }
+    }
+
+    &.dark{
+        label{
+            color: $gray300;
         }
     }
 }

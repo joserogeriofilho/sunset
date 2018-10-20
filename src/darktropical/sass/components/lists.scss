@@ -33,6 +33,21 @@
     &.two-lines{
         .list-group-item{
             min-height: 64px;
+
+            .primary-text{
+                display: flex;
+                flex-direction: column;
+
+                .primary-line{
+                    margin: 0;
+                }
+
+                .secondary-line{
+                    color: $gray300;
+                    font-size: 12px;
+                    margin: 0;
+                }
+            }
         }
     }
 }
