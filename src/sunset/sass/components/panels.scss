@@ -12,4 +12,17 @@
     .panel-body{
         padding: 30px;
     }
+
+    .panel-actions{
+        border-style: solid;
+        border-width: 1px 0 0 0;
+        border-color: $gray100;
+
+        padding: 8px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

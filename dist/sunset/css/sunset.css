@@ -123,6 +123,9 @@ html, body, .container-fluid, .wrapper {
   background-color: rgba(217, 217, 219, 0.5);
   border-radius: 0px; }
 
+.container-fluid {
+  width: 100%; }
+
 .float-left {
   float: left; }
 
@@ -234,7 +237,7 @@ html, body, .container-fluid, .wrapper {
       margin-right: 32px; }
     .app-bar .container .title {
       color: white;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 500; }
 
 .form-group.material-input {
@@ -430,7 +433,7 @@ html, body, .container-fluid {
 
 h1, .jumbotron h1 {
   color: #66666F;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 300;
   line-height: 0.85;
   margin-bottom: 30px; }
@@ -445,6 +448,7 @@ h1, .jumbotron h1 {
 .page-header {
   border-bottom: 1px solid #B3B3B7;
   padding-top: 64px;
+  margin-top: 0;
   margin-bottom: 32px; }
   .page-header h1 {
     margin: 0 0 10px 0; }
@@ -452,14 +456,14 @@ h1, .jumbotron h1 {
 h2 {
   color: #D48B00;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 24px;
   margin-bottom: 16px; }
 
 h3 {
-  color: #303038;
+  color: #40404B;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 16px;
   margin-bottom: 12px; }
 
@@ -732,3 +736,12 @@ p .btn {
     padding: 16px 30px 16px 30px; }
   .panel .panel-body {
     padding: 30px; }
+  .panel .panel-actions {
+    border-style: solid;
+    border-width: 1px 0 0 0;
+    border-color: #D9D9DB;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }

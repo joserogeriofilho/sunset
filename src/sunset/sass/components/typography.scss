@@ -7,7 +7,7 @@ html, body, .container-fluid{
 
 h1, .jumbotron h1{
     color: $gray400;
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 300;
     line-height: 0.85;
     margin-bottom: 30px;
@@ -26,6 +26,7 @@ h1, .jumbotron h1{
 .page-header{
     border-bottom: 1px solid $gray200;
     padding-top: 64px;
+    margin-top: 0;
     margin-bottom: 32px;
 
     h1{
@@ -36,15 +37,15 @@ h1, .jumbotron h1{
 h2{
     color: $primary;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     margin-top: 24px;
     margin-bottom: 16px;
 }
 
 h3{
-    color: $gray600;
+    color: $gray500;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 16px;
     margin-bottom: 12px;
 }
