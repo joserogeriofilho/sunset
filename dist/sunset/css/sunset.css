@@ -85,9 +85,12 @@ html, body, .container-fluid, .wrapper {
 .container-fluid {
   overflow-y: scroll;
   padding: 50px 50px 50px 30px; }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 768px) {
     .container-fluid {
-      padding: 16px 16px 16px 16px; } }
+      padding: 72px 16px 16px 16px; } }
+  @media screen and (max-width: 1200px) and (min-width: 768px) {
+    .container-fluid {
+      padding: 86px 30px 30px 30px; } }
 
 .login-screen {
   background: linear-gradient(to right, #40404B, #303038); }
@@ -118,6 +121,9 @@ html, body, .container-fluid, .wrapper {
   display: flex;
   height: 100%;
   overflow: hidden; }
+  @media screen and (max-width: 1200px) {
+    .wrapper {
+      -webkit-overflow-scrolling: touch; } }
 
 .container .jumbotron, .container-fluid .jumbotron, .jumbotron {
   background-color: rgba(217, 217, 219, 0.5);
@@ -134,9 +140,6 @@ html, body, .container-fluid, .wrapper {
 
 #content {
   position: relative; }
-  @media screen and (max-width: 1200px) {
-    #content {
-      padding: 72px 16px 16px 16px; } }
 
 .sidebar {
   background: linear-gradient(to right, #40404B, #303038);
