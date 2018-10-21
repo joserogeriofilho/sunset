@@ -574,6 +574,10 @@ h3 {
     border-width: 1px;
     color: white;
     font-weight: 400; }
+  .btn:first-child {
+    margin-left: 0; }
+  .btn:last-child {
+    margin-right: 0; }
 
 p .btn {
   margin-bottom: 16px; }
