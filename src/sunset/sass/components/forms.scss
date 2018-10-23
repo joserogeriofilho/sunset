@@ -1,3 +1,9 @@
+label{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
 .form-group{
 
     &.material-input{
@@ -34,7 +40,6 @@
             box-shadow: none;
             font-size: 16px;
             padding-left: 0;
-            //z-index: 25;
 
             &:focus{
                 border-color: $primary;
@@ -77,10 +82,12 @@
             padding: 6px 0 6px 0;
 
             &[multiple]{
-                box-shadow: $shadow-ud-1;
+                background-color: rgba($gray100, 0.35);
+                border-radius: 4px;
+                border-width: 0px;
+                font-size: 14px;
                 margin-top: 6px;
                 min-height: 100px;
-                font-size: 14px;
 
                 option{
                     padding: 2px 0 2px 12px;
@@ -91,8 +98,8 @@
                 font-size: 14px;
                 padding: 6px 0 6px 0;
 
-                &:checked, &:hover{
-                    box-shadow: 0 0 10px 100px $primary inset;
+                &:checked,&:hover{
+                    box-shadow: 0 0 10px 100px $gray100 inset;
                 }
             }
         }
@@ -109,6 +116,7 @@
     user-select: none;
 
     label{
+        font-size: 14px;
         margin-left: 24px;
         margin-top: 2px;
 
@@ -175,6 +183,7 @@
     user-select: none;
 
     label{
+        font-size: 14px;
         font-weight: 400;
         margin-left: 44px;
         margin-top: 0px;

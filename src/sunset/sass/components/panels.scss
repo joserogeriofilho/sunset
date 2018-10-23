@@ -4,7 +4,7 @@
 
     .panel-heading{
         background: white;
-        color: $gray300;
+        border-color: $gray100;
         font-weight: 500;
         padding: 16px 30px 16px 30px;
     }
@@ -24,5 +24,17 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+
+    &.panel-default{
+        .panel-heading{
+            color: $gray300;
+        }
+    }
+
+    &.panel-primary{
+        .panel-heading{
+            color: $primary;
+        }
     }
 }

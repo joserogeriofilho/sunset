@@ -243,6 +243,11 @@ html, body, .container-fluid, .wrapper {
       font-size: 16px;
       font-weight: 500; }
 
+label {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 2px; }
+
 .form-group.material-input {
   min-height: 56px;
   transition: 0.2s ease-in-out; }
@@ -294,17 +299,19 @@ html, body, .container-fluid, .wrapper {
   font-size: 16px;
   padding: 6px 0 6px 0; }
   .form-group.material-select select[multiple] {
-    box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.24);
+    background-color: rgba(217, 217, 219, 0.35);
+    border-radius: 4px;
+    border-width: 0px;
+    font-size: 14px;
     margin-top: 6px;
-    min-height: 100px;
-    font-size: 14px; }
+    min-height: 100px; }
     .form-group.material-select select[multiple] option {
       padding: 2px 0 2px 12px; }
   .form-group.material-select select option {
     font-size: 14px;
     padding: 6px 0 6px 0; }
     .form-group.material-select select option:checked, .form-group.material-select select option:hover {
-      box-shadow: 0 0 10px 100px #D48B00 inset; }
+      box-shadow: 0 0 10px 100px #D9D9DB inset; }
 
 .checkbox {
   display: flex;
@@ -314,6 +321,7 @@ html, body, .container-fluid, .wrapper {
   -ms-user-select: none;
   user-select: none; }
   .checkbox label {
+    font-size: 14px;
     margin-left: 24px;
     margin-top: 2px; }
     .checkbox label input[type=checkbox] {
@@ -361,6 +369,7 @@ html, body, .container-fluid, .wrapper {
   -ms-user-select: none;
   user-select: none; }
   .radiobutton label {
+    font-size: 14px;
     font-weight: 400;
     margin-left: 44px;
     margin-top: 0px; }
@@ -738,7 +747,7 @@ p .btn {
   box-shadow: -1px -1px 4px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.24); }
   .panel .panel-heading {
     background: white;
-    color: #8C8C93;
+    border-color: #D9D9DB;
     font-weight: 500;
     padding: 16px 30px 16px 30px; }
   .panel .panel-body {
@@ -752,3 +761,7 @@ p .btn {
     flex-direction: row;
     align-items: center;
     justify-content: space-between; }
+  .panel.panel-default .panel-heading {
+    color: #8C8C93; }
+  .panel.panel-primary .panel-heading {
+    color: #D48B00; }
