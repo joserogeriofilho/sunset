@@ -2,6 +2,10 @@ label{
     font-size: 12px;
     font-weight: 400;
     margin-top: 2px;
+
+    &~ form{
+        margin-top: 5px;
+    }
 }
 
 .form-group{

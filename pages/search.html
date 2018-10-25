@@ -78,11 +78,11 @@
                 <div class="form-group material-select">
                   <label>Region</label>
                   <select class="form-control">
-                    <option>Antigua and Barbuda</option>
-                    <option>Belarus</option>
-                    <option>Serbia</option>
-                    <option>South Africa</option>
-                    <option>Zimbabwe</option>
+                    <option>North America</option>
+                    <option>Latin America</option>
+                    <option>Europe</option>
+                    <option>Asia</option>
+                    <option>Oceania</option>
                   </select>
                 </div>
               </div>
@@ -91,10 +91,15 @@
                 <div class="form-group material-select">
                   <label>Country</label>
                   <select class="form-control">
+                    <option>Angola</option>                    
                     <option>Antigua and Barbuda</option>
+                    <option>Australia</option>
                     <option>Belarus</option>
+                    <option>Brazil</option>
+                    <option>Canada</option>
                     <option>Serbia</option>
                     <option>South Africa</option>
+                    <option>Spain</option>
                     <option>Zimbabwe</option>
                   </select>
                 </div>
@@ -104,11 +109,17 @@
                 <div class="form-group material-select">
                   <label>State/Province</label>
                   <select class="form-control">
-                    <option>Antigua and Barbuda</option>
-                    <option>Belarus</option>
-                    <option>Serbia</option>
-                    <option>South Africa</option>
-                    <option>Zimbabwe</option>
+                    <option>British Columbia</option>
+                    <option>New South Wales</option>
+                    <option>Northern Territory</option>
+                    <option>Ontario</option>
+                    <option>Paraíba</option>
+                    <option>Paraíba</option>
+                    <option>Quebec</option>
+                    <option>Queensland</option>
+                    <option>Queensland</option>
+                    <option>Rio Grande do Norte</option>
+                    <option>São Paulo</option>
                   </select>
                 </div>
               </div>
@@ -118,13 +129,13 @@
 
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <span class="panel-title">2. PRODUCT CATEGORIES</span>
+            <span class="panel-title">2. PRODUCT TYPE</span>
           </div>
           <div class="panel-body">
             <div class="row">
               <div class="col-xs-12 col-md-3">
                 <div class="form-group material-select">
-                  <label>Choices</label>
+                  <label>Categories</label>
                   <select multiple class="form-control">
                     <option>Angola</option>
                     <option>Burma (Myanmar)</option>
@@ -137,31 +148,27 @@
               </div>
 
               <div class="col-xs-12 col-md-3">
-                <label>Check me out
-                <div class="checkbox">
-                  <label>Check me out
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                  </label>                
-                </div>
-                <div class="checkbox">
-                  <label>Check me out
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>                
-                </div>
-                <div class="checkbox">
-                  <label>Check me out
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>                
-                </div>
-                <div class="checkbox">
-                  <label>Check me out
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>                
-                </div>
+                <label>Genger</label>
+                <form>
+                  <div class="radiobutton">
+                    <label>Male
+                      <input type="radio" name="radio" checked="checked">
+                      <span class="checkmark"></span>
+                    </label>                
+                  </div>
+                  <div class="radiobutton">
+                    <label>Female
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>                
+                  </div>
+                  <div class="radiobutton">
+                    <label>Don't Care
+                      <input type="radio" name="radio">
+                      <span class="checkmark"></span>
+                    </label>                
+                  </div>
+                </form>
               </div>
 
               <div class="col-xs-12 col-md-3">
@@ -229,7 +236,28 @@
             <span class="panel-title">3. PERIOD</span>
           </div>
           <div class="panel-body">
-            Panel content
+            <div class="row">
+              <div class="col-xs-12 col-md-4">
+                <label for="dateBeginning">Beginning</label>
+                <div class="form-group material-input">
+                  <input type="date" class="form-control" id="dateBeginning">
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-md-4">
+                <label for="dateEnd">End</label>
+                <div class="form-group material-input">
+                  <input type="date" class="form-control" id="dateEnd">
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-md-4">
+                <label for="dateBeginning">Time</label>
+                <div class="form-group material-input">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

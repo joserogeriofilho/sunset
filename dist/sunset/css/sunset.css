@@ -247,6 +247,8 @@ label {
   font-size: 12px;
   font-weight: 400;
   margin-top: 2px; }
+  label ~ form {
+    margin-top: 5px; }
 
 .form-group.material-input {
   min-height: 56px;
