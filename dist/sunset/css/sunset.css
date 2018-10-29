@@ -138,6 +138,13 @@ html, body, .container-fluid, .wrapper {
 .float-right {
   float: right; }
 
+.row:last-child div[class^="col-"] *:last-child {
+  margin-bottom: 0; }
+
+@media screen and (max-width: 1200px) {
+  .row:last-child div[class^="col-"]:last-child *:last-child {
+    margin-bottom: 0; } }
+
 #content {
   position: relative; }
 
@@ -176,7 +183,7 @@ html, body, .container-fluid, .wrapper {
           transform: rotate(180deg); }
     .sidebar ul li.active {
       background-color: #303038;
-      border-image: linear-gradient(to bottom, #FE4D42, #EF6C00) 1 100%;
+      border-image: linear-gradient(to bottom, #FE4D42, #F57C00) 1 100%;
       border-style: solid;
       border-width: 0 0 0 6px; }
       .sidebar ul li.active a {
@@ -541,7 +548,7 @@ h3 {
     .btn.btn-raised.btn-default {
       color: #66666F; }
     .btn.btn-raised.btn-primary {
-      background: linear-gradient(to right, #FE4D42, #EF6C00);
+      background: linear-gradient(to right, #FE4D42, #F57C00);
       color: white; }
     .btn.btn-raised.btn-success {
       background-color: #077E41; }
