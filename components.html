@@ -1,0 +1,1107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--meta name="viewport" content="width=device-width, initial-scale=1"-->
+    <meta name="viewport" content="initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--link rel="icon" href="../../favicon.ico"-->
+
+    <title>Sunset Bootstrap 3 Theme</title>
+
+    <!-- jQuery -->
+    <script src="./dist/sunset/js/jquery.min.js"></script>
+    <script src="./dist/sunset/js/jquery.touchSwipe.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="./dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./dist/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+
+    <!-- Dark Tropical -->
+    <link href="./dist/sunset/css/sunset.css" rel="stylesheet">
+    <script src="./dist/sunset/js/sunset.js"></script>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+      <nav id="sidebar" class="sidebar">
+        <div class="app-name">
+          <h3>SUNSET</h3>
+        </div>    
+        <ul>
+          <li class="ripple-30"><a href="./home.html">Home</a></li>
+          <li>
+            <a href="#" data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="true">Components<i class="material-icons">expand_more</i></a>
+            <ul class="collapse in" id="homeSubmenu" aria-expanded="true">
+              <li class="active ripple-30"><a href="#buttons">Buttons</a></li>
+              <li class="ripple-30"><a href="#tables">Tables</a></li>
+              <li class="ripple-30"><a href="#cards">Cards</a></li>
+              <li class="ripple-30"><a href="#forms">Forms</a></li>
+              <li class="ripple-30"><a href="#alerts">Alerts</a></li>
+              <li class="ripple-30"><a href="#lists">Lists</a></li>
+              <li class="ripple-30"><a href="#panels">Panels</a></li>
+            </ul>
+          </li>
+          <li class="ripple-30"><a href="./index.html">Login</a></li>
+          <li class="ripple-30"><a href="./pages/user.html">User Registration</a></li>
+          <li class="ripple-30"><a href="./pages/search.html">Advanced Search</a></li>
+          <li class="ripple-30"><a href="./pages/account.html">Account Management</a></li>
+        </ul>
+      </nav>
+
+      <div class="app-bar">
+        <div class="container">
+          <a href="#" id="hamburger-menu"><i class="material-icons icon-app-bar">menu</i></a>
+          <span class="title">Components</span>
+        </div>
+      </div>
+    
+      <!-- Page Content -->
+    <div class="container-fluid" id="content">
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+          <h1>Collaborate With Us<br>
+          </h1>
+          <p>Have you spotted a bug? Have a great ideia for another component? Or maybe you just wanna go through our code and compile some CSS. Whatever it is the case, feel free to visit our GitHub repository and fork, clone, make pull requests or whatever it is you wanna do.</p>
+
+          <button type="button" class="btn btn-lg btn-raised btn-primary ripple-90">VISIT OUR GITHUB</button>
+        </div>
+
+
+        <div id="buttons" class="page-header">
+          <h1>Buttons</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Raised</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <p>
+              <button type="button" class="btn btn-lg btn-raised btn-default ripple-black-30">DEFAULT</button>
+              <button type="button" class="btn btn-lg btn-raised btn-primary ripple-90">PRIMARY</button>
+              <button type="button" class="btn btn-lg btn-raised btn-success ripple-90">SUCCESS</button>
+              <button type="button" class="btn btn-lg btn-raised btn-info ripple-90">INFO</button>
+              <button type="button" class="btn btn-lg btn-raised btn-warning ripple-90">WARNING</button>
+              <button type="button" class="btn btn-lg btn-raised btn-danger ripple-90">DANGER</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-raised btn-default ripple-black-30">DEFAULT</button>
+              <button type="button" class="btn btn-raised btn-primary ripple-90">PRIMARY</button>
+              <button type="button" class="btn btn-raised btn-success ripple-90">SUCCESS</button>
+              <button type="button" class="btn btn-raised btn-info ripple-90">INFO</button>
+              <button type="button" class="btn btn-raised btn-warning ripple-90">WARNING</button>
+              <button type="button" class="btn btn-raised btn-danger ripple-90">DANGER</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-raised btn-sm btn-default ripple-black-30">DEFAULT</button>
+              <button type="button" class="btn btn-raised btn-sm btn-primary ripple-90">PRIMARY</button>
+              <button type="button" class="btn btn-raised btn-sm btn-success ripple-90">SUCCESS</button>
+              <button type="button" class="btn btn-raised btn-sm btn-info ripple-90">INFO</button>
+              <button type="button" class="btn btn-raised btn-sm btn-warning ripple-90">WARNING</button>
+              <button type="button" class="btn btn-raised btn-sm btn-danger ripple-90">DANGER</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Flat</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <p>
+              <button type="button" class="btn btn-lg btn-flat btn-default ripple-black-30">DEFAULT</button>
+              <button type="button" class="btn btn-lg btn-flat btn-primary ripple-black-30">PRIMARY</button>
+              <button type="button" class="btn btn-lg btn-flat btn-success ripple-black-30">SUCCESS</button>
+              <button type="button" class="btn btn-lg btn-flat btn-info ripple-black-30">INFO</button>
+              <button type="button" class="btn btn-lg btn-flat btn-warning ripple-black-30">WARNING</button>
+              <button type="button" class="btn btn-lg btn-flat btn-danger ripple-black-30">DANGER</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-flat btn-default ripple-black-30">DEFAULT</button>
+              <button type="button" class="btn btn-flat btn-primary ripple-black-30">PRIMARY</button>
+              <button type="button" class="btn btn-flat btn-success ripple-black-30">SUCCESS</button>
+              <button type="button" class="btn btn-flat btn-info ripple-black-30">INFO</button>
+              <button type="button" class="btn btn-flat btn-warning ripple-black-30">WARNING</button>
+              <button type="button" class="btn btn-flat btn-danger ripple-black-30">DANGER</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-flat btn-sm btn-default ripple-black-30">DEFAULT</button>
+              <button type="button" class="btn btn-flat btn-sm btn-primary ripple-black-30">PRIMARY</button>
+              <button type="button" class="btn btn-flat btn-sm btn-success ripple-black-30">SUCCESS</button>
+              <button type="button" class="btn btn-flat btn-sm btn-info ripple-black-30">INFO</button>
+              <button type="button" class="btn btn-flat btn-sm btn-warning ripple-black-30">WARNING</button>
+              <button type="button" class="btn btn-flat btn-sm btn-danger ripple-black-30">DANGER</button>
+            </p>
+          </div>
+        </div>
+
+
+        <div id="tables" class="page-header">
+          <h1>Tables</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Regular vs Condensed</h2>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Regular</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>Condensed Table</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <!--div class="table-responsive"-->
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+            <!--/div-->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Select and Action Buttons</h2>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>                
+                      </div>
+                    </td>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>
+                      <i class="btn btn-action material-icons">bookmark</i>
+                      <i class="btn btn-action material-icons">edit</i>
+                      <i class="btn btn-action material-icons">delete</i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Fixed Header</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table table-fixed-header">
+              <div class="fixed-header">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Username</th>
+                    </tr>
+                  </thead>
+                </table>
+              </div>
+              <div class="fixed-body" style="height: 189px">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    <tr>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                    <tr>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cards" class="page-header">
+          <h1>Cards</h1>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+             <div class="card">
+               <div class="card-rich-media"><img src="./img/img1.jpg" alt="Crab at the beach" class="img-responsive"></div>
+               <div class="card-primary-title">
+                  <div class="title">
+                    Title goes Header
+                    <small>Secondary text</small>
+                  </div>
+               </div>
+               <div class="card-supporting-text hidden-xs">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.
+               </div>
+               <div class="card-actions">
+                  <div class="button-group">
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION 1</button>
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION 2</button>
+                  </div>
+               </div>
+             </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-rich-media"><img src="./img/img2.jpg" alt="Crab at the beach" class="img-responsive"></div>
+              <div class="card-primary-title">
+                  <div class="title">
+                    Title goes Header
+                    <small>Secondary text</small>
+                  </div>
+               </div>
+              <div class="card-supporting-text hidden-xs">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.
+              </div>
+              <div class="card-actions">
+                 <div class="buttons">
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION 1</button>
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION 2</button>
+                 </div>
+                 <div class="action-buttons">
+                    <i class="btn btn-action material-icons">bookmark</i>
+                    <i class="btn btn-action material-icons">delete</i>
+                 </div>
+              </div>
+            </div>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="card">
+            <div class="card-rich-media"><img src="./img/img3.jpg" alt="Crab at the beach" class="img-responsive"></div>
+            <div class="card-primary-title">
+                <div class="title">
+                  Title goes Header
+                  <small>Secondary text</small>
+                </div>
+             </div>
+            <div class="card-supporting-text hidden-xs">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.
+            </div>
+            <div class="card-actions">
+                <button type="button" class="btn btn-flat btn-default ripple-black-30">ACTION</button>
+                <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card">
+              <div class="card-primary-title">
+                <div class="avatar-pic">
+                    <img src="./img/img4.jpg" alt="Crab at the beach" class="">
+                </div>
+                <div class="title">
+                    Title goes Header
+                    <small>Secondary text</small>
+                </div>
+              </div>
+              <div class="card-rich-media"><img src="./img/img4.jpg" alt="Crab at the beach" class="img-responsive"></div>
+              <div class="card-supporting-text hidden-xs">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+              <div class="card-actions">
+                  <div class="buttons">
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">READ</button>
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">SHARE</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="card">
+                <div class="card-rich-media"><img src="./img/img5.jpg" alt="Crab at the beach" class="img-responsive"></div>
+                <div class="card-primary-title">
+                    <div class="title">
+                      Title goes Header
+                      <small>Secondary text</small>
+                    </div>
+                 </div>
+                <div id="cardExpansion" class="card-supporting-text collapse">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.</p>
+                </div>
+                <span class="card-divider"></span>
+                <div class="card-actions">
+                    <button type="button" data-toggle="collapse" data-target="#cardExpansion" aria-expanded="false" class="btn btn-flat btn-primary ripple-black-30"><span class="text-collapsed">EXPAND</span><span class="text-expanded">COLLAPSE</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+              <div class="card">
+                <div class="card-rich-media"><img src="./img/img6.jpg" alt="Crab at the beach" class="img-responsive"></div>
+                <div class="card-primary-title">
+                    <div class="title">
+                      Title goes Header
+                      <small>Secondary text</small>
+                    </div>
+                 </div>
+                <div class="card-supporting-text hidden-xs">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.
+                </div>
+                <span class="card-divider"></span>
+                <div class="card-supporting-text hidden-xs">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas elit est, fermentum sit amet mattis ut, pellentesque in nisi.
+                </div>
+                <div class="card-actions">
+                    <button type="button" class="btn btn-flat btn-default ripple-black-30">ACTION</button>
+                    <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div id="forms" class="page-header">
+          <h1>Forms</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <h2>Input texts</h2>
+
+            <form>
+              <div class="form-group material-input">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1">
+              </div>
+              <div class="form-group material-input">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>             
+            </form>
+          </div>
+
+          <div class="col-xs-12 col-sm-6">
+              <h2>Selects</h2>
+
+              <div class="form-group material-select">
+                <label>Categories</label>
+                <select class="form-control">
+                  <option>Antigua and Barbuda</option>
+                  <option>Belarus</option>
+                  <option>Serbia</option>
+                  <option>South Africa</option>
+                  <option>Zimbabwe</option>
+                </select>
+              </div>
+                
+              <div class="form-group material-select">
+                <label>Choices</label>
+                <select multiple class="form-control">
+                  <option>Angola</option>
+                  <option>Burma (Myanmar)</option>
+                  <option>Cambodia</option>
+                  <option>Iceland</option>
+                  <option>Montenegro</option>
+                </select>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <h2>Checkbox</h2>
+
+            <form>
+              <div class="checkbox">
+                <label>Check me out
+                  <input type="checkbox" checked="checked">
+                  <span class="checkmark"></span>
+                </label>                
+              </div>
+              <div class="checkbox">
+                <label>Check me out
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>                
+              </div>
+              <div class="checkbox">
+                <label>Check me out
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>                
+              </div>
+            </form>
+          </div>
+
+          <div class="col-xs-12 col-sm-3">
+            <h2>Radio Buttons</h2>
+
+            <form>
+              <div class="radiobutton">
+                <label>Check me out
+                  <input type="radio" name="radio" checked="checked">
+                  <span class="checkmark"></span>
+                </label>                
+              </div>
+              <div class="radiobutton">
+                <label>Check me out
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>                
+              </div>
+              <div class="radiobutton">
+                <label>Check me out
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>                
+              </div>
+            </form>
+          </div>
+
+          <div class="col-xs-12 col-sm-6">
+            <h2>File inputs</h2>
+            <form>
+              <div class="fileinput">
+                <label for="exampleInputFile2">
+                  <input type="file" id="exampleInputFile2">
+                  <span class="btn btn-raised btn-default btn-file">UPLOAD</span>
+                  <span class="file-name">No files selected</span>
+                </label>
+                <p class="help-block">Example block-level help text here.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+        <div id="alerts" class="page-header">
+          <h1>Alerts</h1>
+        </div>
+        <div class="alert alert-info" role="alert">
+          <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+        </div>
+        <div class="alert alert-success" role="alert">
+          <strong>Well done!</strong> You successfully read this important alert message.
+        </div>
+        <div class="alert alert-warning" role="alert">
+          <strong>Warning!</strong> Best check yo self, you're not looking too good.
+        </div>
+        <div class="alert alert-danger" role="alert">
+          <strong>Oh snap!</strong> Change a few things up and try submitting again.
+        </div>
+
+
+        <div id="lists" class="page-header">
+          <h1>Lists</h1>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>One Line</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Icon</h3>
+            <div class="list-group one-line">
+              <a href="#" class="list-group-item">
+                  <div class="supporting-visuals">
+                    <i class="material-icons icon-list">bookmark</i>
+                  </div>
+                Cras justo odio
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list">bookmark</i>
+                </div>
+                Dapibus ac facilisis in
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list">bookmark</i>
+                </div>
+                Morbi leo risus
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list">bookmark</i>
+                </div>
+                Porta ac consectetur ac
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list">bookmark</i>
+                </div>
+                Vestibulum at eros
+              </a>
+            </div>
+          </div><!-- /.col-sm-4 -->
+          <div class="col-sm-4">
+            <h3>Large Icon</h3>
+            <div class="list-group one-line">
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                Britany Walton
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                Daphne Hinton
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                Miah Mathis
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                Nabiha Kirkpatrick
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                Taya Kearns
+              </a>
+            </div>
+          </div><!-- /.col-sm-4 -->
+          <div class="col-sm-4">
+            <h3>Large Icon + Controls</h3>
+            <div class="list-group one-line">
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">Britany Walton</div>
+                <div class="list-control">
+                  <i class="btn btn-action material-icons">favorite_border</i>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">Daphne Hinton</div>
+                <div class="list-control">
+                  <i class="btn btn-action material-icons">favorite_border</i>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">Miah Mathis</div>
+                <div class="list-control">
+                  <i class="btn btn-action material-icons">favorite_border</i>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">Nabiha Kirkpatrick</div>
+                <div class="list-control">
+                  <i class="btn btn-action material-icons">favorite_border</i>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">Taya Kearns</div>
+                <div class="list-control">
+                  <i class="btn btn-action material-icons">favorite_border</i>
+                </div>
+              </a>
+            </div>
+          </div><!-- /.col-sm-4 -->
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Two Lines</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Icon</h3>
+            <div class="list-group two-lines">
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list">bookmark</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Cras justo odio</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list">bookmark</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Dapibus ac facilisis in</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list">bookmark</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Morbi leo risus</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list">bookmark</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Porta ac consectetur ac</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list">bookmark</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Vestibulum at eros</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>
+              </a>
+            </div>
+          </div><!-- /.col-sm-4 -->
+          <div class="col-sm-4">
+            <h3>Large Icon</h3>
+            <div class="list-group two-lines">
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Britany Walton</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Daphne Hinton</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Miah Mathis</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>                
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Nabiha Kirkpatrick</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>                
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Taya Kearns</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>                
+              </a>
+            </div>
+          </div><!-- /.col-sm-4 -->
+          <div class="col-sm-4">
+            <h3>Large Icon + Controls</h3>
+            <div class="list-group two-lines">
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Britany Walton</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>
+                <div class="list-control">
+                  <i class="btn btn-action material-icons">favorite_border</i>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Daphne Hinton</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>
+                <div class="list-control">
+                  <i class="btn btn-action material-icons">favorite_border</i>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Miah Mathis</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div> 
+                <div class="list-control">
+                  <i class="btn btn-action material-icons">favorite_border</i>
+                </div>               
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Nabiha Kirkpatrick</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>          
+                <div class="list-control">
+                  <i class="btn btn-action material-icons">favorite_border</i>
+                </div>      
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="supporting-visuals">
+                  <i class="material-icons icon-list icon-large">account_circle</i>
+                </div>
+                <div class="primary-text">
+                  <P class="primary-line">Taya Kearns</P>
+                  <P class="secondary-line">Secondary text</P>
+                </div>                
+                <div class="list-control">
+                  <i class="btn btn-action material-icons">favorite_border</i>
+                </div>
+              </a>
+            </div>
+          </div><!-- /.col-sm-4 -->
+        </div>
+
+        <div id="panels" class="page-header">
+          <h1>Panels</h1>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>With Header</h2>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <span class="panel-title">PANEL TITLE</span>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <h2>Without Header</h2>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <h2>With Actions</h2>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                Panel content
+              </div>
+              <div class="panel-actions">
+                  <button type="button" class="btn btn-flat btn-default ripple-black-30">ACTION</button>
+                  <button type="button" class="btn btn-flat btn-primary ripple-black-30">ACTION</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+
+  </body>
+</html>
