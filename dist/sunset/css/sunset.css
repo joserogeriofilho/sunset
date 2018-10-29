@@ -176,7 +176,7 @@ html, body, .container-fluid, .wrapper {
           transform: rotate(180deg); }
     .sidebar ul li.active {
       background-color: #303038;
-      border-image: linear-gradient(to bottom, #FE4D42, #FEEE5B) 1 100%;
+      border-image: linear-gradient(to bottom, #FE4D42, #EF6C00) 1 100%;
       border-style: solid;
       border-width: 0 0 0 6px; }
       .sidebar ul li.active a {
@@ -268,7 +268,7 @@ label {
       top: 4px;
       transition: 0.2s ease-in-out; }
       .form-group.material-input label.label-outside-input.label-focused {
-        color: #D48B00; }
+        color: #F57C00; }
   .form-group.material-input input {
     background: transparent;
     border-width: 0 0 1px 0;
@@ -277,22 +277,30 @@ label {
     font-size: 16px;
     padding-left: 0; }
     .form-group.material-input input:focus {
-      border-color: #D48B00;
+      border-color: #F57C00;
       border-width: 0px 0px 2px 0px;
       box-shadow: none; }
+    .form-group.material-input input:-webkit-autofill, .form-group.material-input input:-webkit-autofill:focus {
+      -webkit-text-fill-color: #66666F;
+      -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+      transition: background-color 5000s ease-in-out 0s; }
   .form-group.material-input.dark label {
     color: #8C8C93; }
   .form-group.material-input.dark input {
     color: #B3B3B7; }
+    .form-group.material-input.dark input:-webkit-autofill, .form-group.material-input.dark input:-webkit-autofill:focus {
+      -webkit-text-fill-color: #B3B3B7;
+      -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+      transition: background-color 5000s ease-in-out 0s; }
 
 .form-group.material-select label {
   font-size: 12px;
   font-weight: 400;
   margin: 0; }
   .form-group.material-select label.label-focused {
-    color: #D48B00; }
+    color: #F57C00; }
     .form-group.material-select label.label-focused + select {
-      border-color: #D48B00; }
+      border-color: #F57C00; }
 
 .form-group.material-select select {
   box-shadow: none;
@@ -334,7 +342,7 @@ label {
       width: 0; }
       .checkbox label input[type=checkbox]:checked ~ .checkmark {
         border: none;
-        background-color: #D48B00; }
+        background-color: #F57C00; }
         .checkbox label input[type=checkbox]:checked ~ .checkmark:after {
           display: block; }
     .checkbox label .checkmark {
@@ -382,7 +390,7 @@ label {
       height: 0;
       width: 0; }
       .radiobutton label input[type=radio]:checked ~ .checkmark {
-        border-color: #D48B00; }
+        border-color: #F57C00; }
         .radiobutton label input[type=radio]:checked ~ .checkmark:after {
           display: block; }
     .radiobutton label .checkmark {
@@ -405,7 +413,7 @@ label {
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background: #D48B00; }
+        background: #F57C00; }
 
 .fileinput {
   width: 100%; }
@@ -442,6 +450,14 @@ label {
 .form-buttons {
   margin-top: 24px; }
 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: initial;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s; }
+
 html, body, .container-fluid {
   font-family: 'Roboto', sans-serif; }
 
@@ -457,7 +473,7 @@ h1, .jumbotron h1 {
     font-weight: 500; }
 
 .jumbotron h1 {
-  color: #D48B00; }
+  color: #F57C00; }
 
 .page-header {
   border-bottom: 1px solid #B3B3B7;
@@ -468,7 +484,7 @@ h1, .jumbotron h1 {
     margin: 0 0 10px 0; }
 
 h2 {
-  color: #D48B00;
+  color: #F57C00;
   font-weight: 400;
   font-size: 22px;
   margin-top: 24px;
@@ -525,7 +541,7 @@ h3 {
     .btn.btn-raised.btn-default {
       color: #66666F; }
     .btn.btn-raised.btn-primary {
-      background: linear-gradient(to right, #FE4D42, #FEEE5B);
+      background: linear-gradient(to right, #FE4D42, #EF6C00);
       color: white; }
     .btn.btn-raised.btn-success {
       background-color: #077E41; }
@@ -549,7 +565,7 @@ h3 {
     .btn.btn-flat.btn-default {
       color: #66666F; }
     .btn.btn-flat.btn-primary {
-      color: #D48B00; }
+      color: #F57C00; }
     .btn.btn-flat.btn-success {
       color: #077E41; }
     .btn.btn-flat.btn-info {
@@ -766,4 +782,4 @@ p .btn {
   .panel.panel-default .panel-heading {
     color: #8C8C93; }
   .panel.panel-primary .panel-heading {
-    color: #D48B00; }
+    color: #F57C00; }

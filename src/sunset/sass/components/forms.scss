@@ -50,6 +50,13 @@ label{
                 border-width: 0px 0px 2px 0px;
                 box-shadow: none;
             }
+
+            &:-webkit-autofill,
+            &:-webkit-autofill:focus{
+              -webkit-text-fill-color: $gray400;
+              -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+              transition: background-color 5000s ease-in-out 0s;
+            }
         }
 
         &.dark{
@@ -59,6 +66,13 @@ label{
 
             input{
                 color: $gray200;
+
+                &:-webkit-autofill,
+                &:-webkit-autofill:focus{
+                  -webkit-text-fill-color: $gray200;
+                  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+                  transition: background-color 5000s ease-in-out 0s;
+                }
             }
         }
     }
@@ -283,4 +297,13 @@ label{
 
 .form-buttons{
     margin-top: 24px;
+}
+
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: initial;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
