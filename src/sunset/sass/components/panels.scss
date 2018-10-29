@@ -37,4 +37,19 @@
             color: $primary;
         }
     }
+
+    @media screen and (max-width: $break-sm){
+        margin-left: -16px;
+        margin-right: -16px;
+        box-shadow: none;
+
+        .panel-heading{
+            border: none;
+            padding: 16px;
+        }
+    
+        .panel-body{
+            padding: 16px;
+        }
+    }
 }

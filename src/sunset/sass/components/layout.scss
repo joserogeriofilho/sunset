@@ -11,12 +11,14 @@ html, body, .container-fluid, .wrapper{
     overflow-y: scroll;
     padding: 50px 50px 50px 30px;
 
+    // phone
     @media screen and (max-width: $break-xs) {
         padding: 72px 16px 16px 16px;
 
         //-webkit-overflow-scrolling: touch;
     }
 
+    // tablet
     @media screen and (max-width: $break-md) and (min-width: $break-xs){
         padding: 86px 30px 30px 30px;
 
@@ -85,15 +87,18 @@ html, body, .container-fluid, .wrapper{
     float: right;
 }
 
-/*.row:last-child{
-    div[class^="col-"]{
-        *:last-child{
-            margin-bottom: 0;
+
+@media screen and (min-width: $break-sm){
+    .row:last-child{
+        div[class^="col-"]{
+            *:last-child{
+                margin-bottom: 0;
+            }
         }
     }
 }
 
-@media screen and (max-width: $break-md){
+@media screen and (max-width: $break-sm){
     .row:last-child{
         div[class^="col-"]:last-child{
             *:last-child{
@@ -101,7 +106,7 @@ html, body, .container-fluid, .wrapper{
             }
         }
     }
-}*/
+}
 
 #content{
     position: relative;

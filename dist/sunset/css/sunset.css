@@ -138,10 +138,11 @@ html, body, .container-fluid, .wrapper {
 .float-right {
   float: right; }
 
-.row:last-child div[class^="col-"] *:last-child {
-  margin-bottom: 0; }
+@media screen and (min-width: 991px) {
+  .row:last-child div[class^="col-"] *:last-child {
+    margin-bottom: 0; } }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 991px) {
   .row:last-child div[class^="col-"]:last-child *:last-child {
     margin-bottom: 0; } }
 
@@ -269,12 +270,12 @@ label {
     position: relative;
     top: 24px;
     transition: 0.2s ease-in-out; }
-    .form-group.material-input label.label-outside-input {
+    .form-group.material-input label.label-outside-input, .form-group.material-input label.label-always-outside {
       font-size: 12px;
       position: relative;
       top: 4px;
       transition: 0.2s ease-in-out; }
-      .form-group.material-input label.label-outside-input.label-focused {
+      .form-group.material-input label.label-outside-input.label-focused, .form-group.material-input label.label-always-outside.label-focused {
         color: #F57C00; }
   .form-group.material-input input {
     background: transparent;
@@ -790,3 +791,13 @@ p .btn {
     color: #8C8C93; }
   .panel.panel-primary .panel-heading {
     color: #F57C00; }
+  @media screen and (max-width: 991px) {
+    .panel {
+      margin-left: -16px;
+      margin-right: -16px;
+      box-shadow: none; }
+      .panel .panel-heading {
+        border: none;
+        padding: 16px; }
+      .panel .panel-body {
+        padding: 16px; } }
