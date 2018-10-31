@@ -55,6 +55,13 @@ $( document ).ready(function() {
 
     // INPUTS
 
+    /*$(document).on(".form-group", "focusin", function(){
+        var label = $(this).children("label");
+
+        label.addClass("label-focused");
+        label.addClass("label-outside-input");
+    });*/
+
     $(".form-group").on("focusin", function(){
         var label = $(this).children("label");
 
