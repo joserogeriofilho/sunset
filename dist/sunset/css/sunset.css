@@ -816,4 +816,5 @@ p .btn {
   .avatar-pic img {
     height: 100%;
     width: auto;
-    border-radius: 100%; }
+    border-radius: 100%;
+    margin: auto; }
