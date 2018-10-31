@@ -7,10 +7,18 @@
         border-color: $gray100;
         font-weight: 500;
         padding: 16px 30px 16px 30px;
+
+        &.thin-padding{
+            padding: 16px;
+        }
     }
 
     .panel-body{
         padding: 30px;
+
+        &.thin-padding{
+            padding: 16px;
+        }
     }
 
     .panel-actions{

@@ -745,7 +745,7 @@ p .btn {
   .list-group .list-group-item {
     border: none;
     min-height: 48px;
-    padding: 16px;
+    padding: 16px 0 16px 0;
     display: flex;
     align-items: center; }
     .list-group .list-group-item .supporting-visuals {
@@ -756,6 +756,10 @@ p .btn {
           margin: 0 16px 0 0; }
     .list-group .list-group-item .primary-text {
       width: 100%; }
+    .list-group .list-group-item:first-child {
+      padding-top: 0; }
+    .list-group .list-group-item:last-child {
+      padding-bottom: 0; }
   .list-group.two-lines .list-group-item {
     min-height: 64px; }
     .list-group.two-lines .list-group-item .primary-text {
@@ -776,8 +780,12 @@ p .btn {
     border-color: #D9D9DB;
     font-weight: 500;
     padding: 16px 30px 16px 30px; }
+    .panel .panel-heading.thin-padding {
+      padding: 16px; }
   .panel .panel-body {
     padding: 30px; }
+    .panel .panel-body.thin-padding {
+      padding: 16px; }
   .panel .panel-actions {
     border-style: solid;
     border-width: 1px 0 0 0;
@@ -801,3 +809,11 @@ p .btn {
         padding: 16px; }
       .panel .panel-body {
         padding: 16px; } }
+
+.avatar-pic {
+  width: 100%;
+  max-height: 200px; }
+  .avatar-pic img {
+    height: 100%;
+    width: auto;
+    border-radius: 100%; }

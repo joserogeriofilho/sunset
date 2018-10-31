@@ -77,6 +77,20 @@ $( document ).ready(function() {
     $('input[type=file]').change(function(e){
         $in=$(this);
         $in.siblings(".file-name").text($in.val().split('\\').pop());
-      });
+    });
+
+    // IMAGES
+    let avatarPic = $('.avatar-pic');
+    let avatarPicParent = avatarPic.parent();
+    let avatarPicChild = avatarPic.parent();
+    
+    if(!avatarPicParent.hasClass( "card-primary-title" )){
+        let dim = avatarPicParent.width() < avatarPicParent.height() ? avatarPicParent.width() : avatarPicParent.height();
+
+        dim = dim > 200 ? 200 : dim;
+
+        avatarPic.children().css('width', dim);
+        avatarPic.children().css('height', dim);
+    }
     
 });
