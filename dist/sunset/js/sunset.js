@@ -99,5 +99,22 @@ $( document ).ready(function() {
         avatarPic.children().css('width', dim);
         avatarPic.children().css('height', dim);
     }
+
+
+    // LAYOUT
+
+   /* let col = $('.col-full-height');
+    let cols = col.siblings();
+    let maxHeight = 0;
+
+    alert("col = " + col.attr('class'));
+    alert("cols = " + cols.attr('class'));
+    alert("cols.length = " + cols.length);
+
+    cols.each(function(index, element){
+        maxHeight = (maxHeight < element.height()) ? maxHeight = element.height() : maxHeight;
+    });
+
+    alert("maxHeight = " + maxHeight);*/
     
 });
