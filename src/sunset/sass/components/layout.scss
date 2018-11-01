@@ -121,6 +121,13 @@ html, body, .container-fluid, .wrapper{
     justify-content: center;
 }
 
+.row-eq-height{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
 #content{
     position: relative;
 }

@@ -153,6 +153,12 @@ html, body, .container-fluid, .wrapper {
   align-items: center;
   justify-content: center; }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 #content {
   position: relative; }
 
@@ -531,6 +537,10 @@ h3 {
   color: #B3B3B7;
   margin: 30px 0 0 0;
   text-align: center; }
+
+.illustration-icon {
+  font-size: 248px;
+  color: #D9D9DB; }
 
 .btn {
   border: none;
