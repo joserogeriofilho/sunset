@@ -84,7 +84,7 @@ html, body, .container-fluid, .wrapper {
 
 .container-fluid {
   overflow-y: scroll;
-  padding: 50px 50px 50px 30px; }
+  padding: 30px 50px 50px 30px; }
   @media screen and (max-width: 768px) {
     .container-fluid {
       padding: 72px 16px 16px 16px; } }
@@ -139,11 +139,11 @@ html, body, .container-fluid, .wrapper {
   float: right; }
 
 @media screen and (min-width: 991px) {
-  .row:last-child div[class^="col-"] *:last-child {
+  .panel .row:last-child div[class^="col-"] > *:last-child {
     margin-bottom: 0; } }
 
 @media screen and (max-width: 991px) {
-  .row:last-child div[class^="col-"]:last-child *:last-child {
+  .panel .row:last-child div[class^="col-"]:last-child > *:last-child {
     margin-bottom: 0; } }
 
 #content {
@@ -254,7 +254,7 @@ html, body, .container-fluid, .wrapper {
 label {
   font-size: 12px;
   font-weight: 400;
-  margin-top: 2px; }
+  margin-top: 4px; }
   label ~ form {
     margin-top: 5px; }
 
@@ -499,9 +499,9 @@ h2 {
   margin-bottom: 16px; }
 
 h3 {
-  color: #40404B;
+  color: #8C8C93;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 16px;
   margin-bottom: 12px; }
 
@@ -510,6 +510,9 @@ h3 {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px; }
+
+.panel h1, .panel h2, .panel h3 {
+  margin: 0px; }
 
 .login-screen h1 {
   color: white;

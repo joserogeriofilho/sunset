@@ -9,7 +9,7 @@ html, body, .container-fluid, .wrapper{
 
 .container-fluid{
     overflow-y: scroll;
-    padding: 50px 50px 50px 30px;
+    padding: 30px 50px 50px 30px;
 
     // phone
     @media screen and (max-width: $break-xs) {
@@ -89,20 +89,24 @@ html, body, .container-fluid, .wrapper{
 
 
 @media screen and (min-width: $break-sm){
-    .row:last-child{
-        div[class^="col-"]{
-            *:last-child{
-                margin-bottom: 0;
+    .panel{
+        .row:last-child{
+            div[class^="col-"]{
+                > *:last-child{
+                    margin-bottom: 0;
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: $break-sm){
-    .row:last-child{
-        div[class^="col-"]:last-child{
-            *:last-child{
-                margin-bottom: 0;
+    .panel{
+        .row:last-child{
+            div[class^="col-"]:last-child{
+                > *:last-child{
+                    margin-bottom: 0;
+                }
             }
         }
     }
