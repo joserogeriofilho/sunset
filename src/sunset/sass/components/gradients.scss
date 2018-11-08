@@ -1,3 +1,4 @@
 $gradient-dark-gray: linear-gradient(to right, $gray500 , $gray600);
-$gradient-primary-bottom: linear-gradient(to bottom, $red500, #F57C00);
-$gradient-primary-right: linear-gradient(to right, $red500, #F57C00);
+$gradient-primary-bottom: linear-gradient(to bottom, $red500, $primary);
+$gradient-primary-right: linear-gradient(to right, $red500, $primary);
+$gradient-blue-green-right: linear-gradient(to right, $blue400, $green400);
