@@ -87,12 +87,11 @@ $( document ).ready(function() {
     });
 
     // IMAGES
-    let avatarPic = $('.avatar-pic');
-    let avatarPicParent = avatarPic.parent();
-    let avatarPicChild = avatarPic.parent();
+    var avatarPic = $('.avatar-pic');
+    var avatarPicParent = avatarPic.parent();
     
     if(!avatarPicParent.hasClass( "card-primary-title" )){
-        let dim = avatarPicParent.width() < avatarPicParent.height() ? avatarPicParent.width() : avatarPicParent.height();
+        var dim = avatarPicParent.width() < avatarPicParent.height() ? avatarPicParent.width() : avatarPicParent.height();
 
         dim = dim > 200 ? 200 : dim;
 
