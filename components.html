@@ -27,6 +27,7 @@
     <!-- Dark Tropical -->
     <link href="./dist/sunset/css/sunset.css" rel="stylesheet">
     <script src="./dist/sunset/js/sunset.min.js"></script>
+    
   </head>
 
   <body>
@@ -40,8 +41,8 @@
         <ul>
           <li class="ripple-30"><a href="./index.html">Login</a></li>
           <li>
-            <a href="#" data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="false">Components<i class="material-icons">expand_more</i></a>
-            <ul class="collapse" id="homeSubmenu">
+            <a href="#" data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="true">Components<i class="material-icons">expand_more</i></a>
+            <ul class="submenu collapse in" id="homeSubmenu">
               <li class="active ripple-30"><a href="#buttons">Buttons</a></li>
               <li class="ripple-30"><a href="#tables">Tables</a></li>
               <li class="ripple-30"><a href="#cards">Cards</a></li>
@@ -72,11 +73,13 @@
           </h1>
           <p>Have you spotted a bug? Have a great ideia for another component? Or maybe you just wanna go through our code and compile some CSS. Whatever it is the case, feel free to visit our GitHub repository and fork, clone, make pull requests or whatever it is you wanna do.</p>
 
-          <button type="button" class="btn btn-lg btn-raised btn-primary ripple-90">VISIT OUR GITHUB</button>
+          <form action="https://github.com/roger-sama/sunset">
+            <button type="submit" class="btn btn-lg btn-raised btn-primary ripple-90">VISIT OUR GITHUB</button>
+          </form>
         </div>
 
 
-        <div id="buttons" class="page-header">
+        <div id="buttons" class="page-header page-section">
           <h1>Buttons</h1>
         </div>
 
@@ -151,7 +154,7 @@
         </div>
 
 
-        <div id="tables" class="page-header">
+        <div id="tables" class="page-header  page-section">
           <h1>Tables</h1>
         </div>
 
@@ -490,7 +493,7 @@
           </div>
         </div>
 
-        <div id="cards" class="page-header">
+        <div id="cards" class="page-header  page-section">
           <h1>Cards</h1>
         </div>
         
@@ -626,7 +629,7 @@
             </div>
         </div>
 
-        <div id="forms" class="page-header">
+        <div id="forms" class="page-header  page-section">
           <h1>Forms</h1>
         </div>
 
@@ -740,7 +743,7 @@
         </div>
 
 
-        <div id="alerts" class="page-header">
+        <div id="alerts" class="page-header  page-section">
           <h1>Alerts</h1>
         </div>
         <div class="alert alert-info" role="alert">
@@ -757,7 +760,7 @@
         </div>
 
 
-        <div id="lists" class="page-header">
+        <div id="lists" class="page-header  page-section">
           <h1>Lists</h1>
         </div>
         <div class="row">
@@ -1061,7 +1064,7 @@
           </div><!-- /.col-sm-4 -->
         </div>
 
-        <div id="panels" class="page-header">
+        <div id="panels" class="page-header  page-section">
           <h1>Panels</h1>
         </div>
         <div class="row">

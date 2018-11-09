@@ -34,6 +34,23 @@ $( document ).ready(function() {
         }
     });
 
+    // Activate links when scrolling through components page
+    $('#content').scroll(function() {
+        var scrollDistance = $('#content').scrollTop();
+
+        if ($('#buttons').length){
+            scrollDistance += $('#buttons').position().top;
+        }
+
+        // Assign active class to nav links while scolling
+        $('.page-section').each(function(i) {            
+            if ($(this).position().top <= scrollDistance) {
+                $('.sidebar li.active').removeClass('active');
+                $('.sidebar .submenu li').eq(i).addClass('active');
+            }
+        });
+    }).scroll();
+
     // Hide and show sidebar on mobile
     $("body").on("click", '#hamburger-menu', function() {
         showSidebar();
@@ -54,13 +71,6 @@ $( document ).ready(function() {
 
 
     // INPUTS
-
-    /*$(document).on(".form-group", "focusin", function(){
-        var label = $(this).children("label");
-
-        label.addClass("label-focused");
-        label.addClass("label-outside-input");
-    });*/
 
     $(".form-group").on("focusin", function(){
         var label = $(this).children("label");
