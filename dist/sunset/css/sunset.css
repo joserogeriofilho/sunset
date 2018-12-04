@@ -835,27 +835,7 @@ p .btn {
   width: 100%;
   max-height: 200px; }
   .avatar-pic img {
-    height: 100%;
+    height: -webkit-fill-available;
     width: auto;
     border-radius: 100%;
     margin: auto; }
-
-.landingpage .section_one {
-  background: linear-gradient(to right, #FE4D42, #F57C00);
-  height: 514px; }
-
-.landingpage .section_two {
-  background-color: #D9D9DB;
-  height: 745px; }
-
-.landingpage .section_three {
-  background: linear-gradient(to right, #5899D8, #6AB28D);
-  height: 665px; }
-
-.landingpage .section_four {
-  background-color: #D9D9DB;
-  height: 745px; }
-
-.landingpage .section_five {
-  background: linear-gradient(to right, #40404B, #303038);
-  height: 550px; }

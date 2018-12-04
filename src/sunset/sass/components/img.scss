@@ -3,7 +3,7 @@
     max-height: 200px;
 
     img{
-        height: 100%;
+        height: -webkit-fill-available;
         width: auto;
         border-radius: 100%;
         margin: auto;
