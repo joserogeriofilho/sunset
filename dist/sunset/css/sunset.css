@@ -836,6 +836,8 @@ p .btn {
   max-height: 200px; }
   .avatar-pic img {
     height: -webkit-fill-available;
-    width: auto;
+    width: -webkit-fill-available;
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 100%;
     margin: auto; }
