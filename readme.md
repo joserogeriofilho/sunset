@@ -10,6 +10,8 @@ Sunset is a responsive Bootstrap 3 Theme inspired by Material Design. It provide
 * Advanced Search
 * Account Management
 
+<p align="center"><img alt="Different devices mockup showing the design responsiveness" src="https://user-images.githubusercontent.com/12038461/49688616-a8c0ba80-faf3-11e8-8e19-ca2129a4e0ca.png"></p>
+
 ### Live Demo
 http://sunset.getforge.io/components.html
 
