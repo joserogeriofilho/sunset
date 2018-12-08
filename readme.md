@@ -1,4 +1,4 @@
-![Sunset Bootstrap 3 Theme](https://user-images.githubusercontent.com/12038461/48175556-579e8a80-e2eb-11e8-8954-27b5cc05682f.png)
+<p align="center"><img alt="Sunset Bootstrap 3 Theme" src="https://user-images.githubusercontent.com/12038461/49688689-a743c200-faf4-11e8-9485-0d70f8d03bf7.png"></p>
 
 # A Material Design Bootstrap 3 Theme
 Sunset is a responsive Bootstrap 3 Theme inspired by Material Design. It provides a sidebar and an app bar both with a native feel plus a handful of components. This project uses SASS as a CSS preprocessor as well as jQuery v3.3.1.
