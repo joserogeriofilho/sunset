@@ -60,15 +60,6 @@ $( document ).ready(function() {
         hideSidebar();
     });
 
-    $("#sidebar").swipe( {
-        swipeLeft:function(event, direction, distance, duration, fingerCount) {
-            hideSidebar();
-        },
-        swipeRight:function(event, direction, distance, duration, fingerCount) {
-            showSidebar();
-        }
-    });
-
 
     // INPUTS
 
