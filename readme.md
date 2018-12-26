@@ -16,7 +16,7 @@ Sunset is a responsive Bootstrap 3 Theme inspired by Material Design. It provide
 http://sunset.getforge.io/components.html
 
 ### The Author
-* [Behance](https://www.behance.net/joserogerio)
+* [Behance](https://www.behance.net/joserogeriofilho)
 * [Linkedin](https://www.linkedin.com/in/joserogeriofilho/)
 
 ### License
